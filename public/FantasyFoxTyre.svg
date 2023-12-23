@@ -1,0 +1,228 @@
+<svg 
+id="test1" 
+xmlns="http://www.w3.org/2000/svg" 
+xmlns:xlink="http://www.w3.org/1999/xlink" 
+viewBox="0 0 300 300" 
+shape-rendering="geometricPrecision" 
+text-rendering="geometricPrecision"
+>
+<defs>
+<radialGradient 
+id="test1-u-center-ring-0-stroke" 
+cx="0" 
+cy="0" 
+r="0.5" 
+spreadMethod="reflect" 
+gradientUnits="objectBoundingBox" 
+gradientTransform="translate(0.5 0.5)">
+<stop id="test1-u-center-ring-0-stroke-0" offset="88%" stop-color="#8f8f8f"/>
+<stop id="test1-u-center-ring-0-stroke-1" offset="100%" stop-color="#000"/>
+</radialGradient>
+</defs>
+<ellipse 
+id="test1-u-outer-ring" 
+rx="130" 
+ry="130" 
+transform="translate(150 150)" 
+fill="rgba(210,219,237,0)" 
+stroke="#000" stroke-width="38"/>
+<ellipse 
+id="test1-u-marking-rings" 
+rx="48.650309" 
+ry="49.792957" 
+transform="matrix(2.672131 0 0 2.610811 151.611385 148.791459)" 
+fill="rgba(255,255,255,0)" 
+stroke="#ff2800" 
+stroke-width="5"/>
+<g id="test1-s-g1" transform="translate(0 0.000001)">
+<path 
+id="test1-u-rectangle" 
+d="M-15.076321,-2.701487l135.534569-1.290327-11.217721,34.594395L-2.79649,31.73943L-15.076321,-2.701487Z" 
+transform="matrix(.744031 0.007263-.006986 0.71573 110.758839 12.78586)" 
+stroke-width="0"/>
+<path 
+id="test1-u-copy-of-rectangle" 
+d="M-15.076321,-2.701487l135.534569-1.290327-11.217721,34.594395L-2.79649,31.73943L-15.076321,-2.701487Z" 
+transform="matrix(.744055-.004091-.003936-.715753 111.4994 286.497332)" 
+stroke-width="0"/>
+<path 
+id="test1-u-copy-of-rectangle-2" 
+d="M-15.076321,-2.701487l135.534569-1.290327-11.217721,34.594395L-2.79649,31.73943L-15.076321,-2.701487Z" 
+transform="matrix(.551715-.499244-.480254-.53073 208.627507 280.244559)" 
+stroke-width="0"/>
+<path 
+id="test1-u-copy-of-rectangle-22" 
+d="M-15.076321,-2.701487l135.534569-1.290327-11.217721,34.594395L-2.79649,31.73943L-15.076321,-2.701487Z" 
+transform="matrix(.571474 0.476499 0.458375-.549737 33.254785 229.268637)" 
+stroke-width="0"/>
+</g>
+<polygon 
+id="test1-s-polygon1" 
+points="2.24102,-113.304497 14.035605,-37.827848 70.224759,-92.296366 33.119644,-24.641102 112.24102,-37.296366 40.409099,-3.304497 112.24102,30.687372 33.119644,18.032108 70.224759,85.687372 14.035605,31.218854 2.24102,106.695503 -9.553565,31.218854 -65.742719,85.687372 -28.637604,18.032108 -107.75898,30.687372 -35.927059,-3.304497 -107.75898,-37.296366 -28.637604,-24.641102 -65.742719,-92.296366 -9.553565,-37.827848 2.24102,-113.304497" 
+transform="matrix(.003277 0.967852-1.016011 0.00344 147.007035 148.214175)" 
+stroke="#000" 
+stroke-width="10"/>
+<ellipse 
+id="test1-u-center-ring-1" 
+rx="9.355829" 
+ry="9.575569" 
+transform="matrix(2.672131 0 0 2.610811 150 150)" 
+fill="rgba(0,0,0,0)" 
+stroke="#000" 
+stroke-width="5"/>
+<ellipse 
+id="test1-u-center-ring-0" 
+rx="7.484663" 
+ry="7.660455" 
+transform="matrix(2.672131 0 0 2.610811 150 150)" 
+stroke="url(#test1-u-center-ring-0-stroke)" 
+stroke-width="3"/>
+<!-- <g id="test1-s-g2" transform="translate(0 0.000001)">
+<text 
+id="test1-s-text1" 
+dx="0" 
+dy="0" 
+font-family="&quot;test1:::Montserrat&quot;" 
+font-size="25" 
+font-weight="700" 
+transform="matrix(.717481 0.696578-.696578 0.717481 48.918119 245.296244)" 
+fill="#ff2800" 
+stroke-width="0">
+<tspan id="test1-s-tspan1" y="0" font-weight="700" stroke-width="0">
+A
+</tspan>
+</text>
+<text 
+id="test1-s-text2" 
+dx="0" 
+dy="0" 
+font-family="&quot;test1:::Montserrat&quot;" 
+font-size="25" 
+font-weight="700" 
+transform="matrix(.972539 0.232742-.232742 0.972539 109.064256 283.162715)" 
+fill="#ff2800" 
+stroke-width="0">
+<tspan id="test1-s-tspan2" y="0" font-weight="700" stroke-width="0">
+A
+</tspan>
+</text>
+<text 
+id="test1-s-text3" 
+dx="0" 
+dy="0" 
+font-family="&quot;test1:::Montserrat&quot;" 
+font-size="25" 
+font-weight="700" 
+transform="matrix(.846941 0.531687-.531687 0.846941 67.38202 262.329166)" 
+fill="#ff2800" 
+stroke-width="0">
+<tspan id="test1-s-tspan3" y="0" font-weight="700" stroke-width="0">
+N
+</tspan>
+</text>
+<text 
+id="test1-s-text4" 
+dx="0" 
+dy="0" 
+font-family="&quot;test1:::Montserrat&quot;" 
+font-size="25" 
+font-weight="700" 
+transform="matrix(.997578 0.06955-.06955 0.997578 132.786417 288.440644)" 
+fill="#ff2800" 
+stroke-width="0">
+<tspan id="test1-s-tspan4" y="0" font-weight="700" stroke-width="0">
+S
+</tspan>
+</text>
+<text 
+id="test1-s-text5" 
+dx="0" 
+dy="0" 
+font-family="&quot;test1:::Montserrat&quot;" 
+font-size="25" 
+font-weight="700" 
+transform="matrix(.591828 0.806065-.806065 0.591828 35.397973 228.268427)" 
+fill="#ff2800" 
+stroke="#fffefe" 
+stroke-width="0">
+<tspan id="test1-s-tspan5" y="0" font-weight="700" stroke-width="0">
+F
+</tspan>
+</text>
+<text 
+id="test1-s-text6" 
+dx="0" 
+dy="0" 
+font-family="&quot;test1:::Montserrat&quot;" 
+font-size="25" 
+font-weight="700" 
+transform="matrix(.929304 0.369317-.369317 0.929304 90.081714 275.984533)" 
+fill="#ff2800" 
+stroke-width="0">
+<tspan id="test1-s-tspan6" y="0" font-weight="700" stroke-width="0">
+T
+</tspan>
+</text>
+<text 
+id="test1-s-text7" 
+dx="0" 
+dy="0" 
+font-family="&quot;test1:::Montserrat&quot;" 
+font-size="25" 
+font-weight="700" 
+transform="matrix(.997743-.06715 0.06715 0.997743 153.700068 289.197829)" 
+fill="#ff2800" 
+stroke-width="0">
+<tspan id="test1-s-tspan7" y="0" font-weight="700" stroke-width="0">
+Y
+</tspan>
+</text>
+<text 
+id="test1-s-text8" 
+dx="0" 
+dy="0" 
+font-family="&quot;test1:::Montserrat&quot;" 
+font-size="25" 
+font-weight="700" 
+transform="matrix(.888961-.457983 0.457983 0.888961 209.559286 275.341148)" 
+fill="#ff2800" 
+stroke-width="0">
+<tspan id="test1-s-tspan8" y="0" font-weight="700" stroke-width="0">
+F
+</tspan>
+</text>
+<text 
+id="test1-s-text9" 
+dx="0" 
+dy="0" 
+font-family="&quot;test1:::Montserrat&quot;" 
+font-size="25" 
+font-weight="700" 
+transform="matrix(.795857-.605485 0.605485 0.795857 228.725368 264.591281)" 
+fill="#ff2800" 
+stroke-width="0">
+<tspan id="test1-s-tspan9" y="0" font-weight="700" stroke-width="0">
+O
+</tspan>
+</text>
+<text 
+id="test1-s-text10" 
+dx="0" 
+dy="0" 
+font-family="&quot;test1:::Montserrat&quot;" 
+font-size="25" 
+font-weight="700" 
+transform="matrix(.651337-.758789 0.758789 0.651337 250.227336 246.622232)" 
+fill="#ff2800" 
+stroke-width="0">
+<tspan id="test1-s-tspan10" y="0" font-weight="700" stroke-width="0">
+X
+</tspan>
+</text>
+</g> -->
+<style>
+<!-- <![CDATA[
+@font-face {font-family: 'test1:::Montserrat';font-style: normal;font-weight: 700;src: url(data:font/ttf;charset=utf-8;base64,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) format('truetype');}
+]]> -->
+</style>
+</svg>
