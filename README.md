@@ -21,5 +21,5 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 ## Reference Links
 https://www.motorsportgaminghub.com/
-https://fantasy.formula1.com/en/
-https://www.f1fantasytracker.com/
+/nhttps://fantasy.formula1.com/en/
+/nhttps://www.f1fantasytracker.com/
