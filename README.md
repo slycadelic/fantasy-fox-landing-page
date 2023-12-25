@@ -20,12 +20,12 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 + https://racingnews365.com/
 
 ## Color Scheme:
-Dark Void:          #151419     rgb(21,20,25)
-Lava:               #F56E0F     rgb(245,110,15)
-Gluon Grey:         #1B1B1E     rgb(27,27,30)
-Slate Grey:         #262626     rgb(38,38,38)
-Dusty Grey:         #878787     rgb(135,135,135)
-Snow:               #FBFBFB     rgb(251,251,251)
+- Dark Void          #151419     rgb(21,20,25)
+- Lava               #F56E0F     rgb(245,110,15)
+- Gluon Grey         #1B1B1E     rgb(27,27,30)
+- Slate Grey         #262626     rgb(38,38,38)
+- Dusty Grey         #878787     rgb(135,135,135)
+- Snow               #FBFBFB     rgb(251,251,251)
 **Use Contrasting font color for each background.**
 
 # Pages
