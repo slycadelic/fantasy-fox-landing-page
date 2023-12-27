@@ -1,3 +1,5 @@
+# Fantasy Fox App Landing Page
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 First, run the development server:
@@ -28,13 +30,13 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 - Snow               #FBFBFB     rgb(251,251,251)
 **Use Contrasting font color for each background.**
 
-# Pages
+### Pages
 + Home (1)
 + How to Play (2,3,4)
 + Standings (5, 6)
 + Contact (7)
 
-# Home page sections (Refer to Reference Links for style guide)
+### Home page sections (Refer to Reference Links for style guide)
 1. Main Banner: with small boxes for links for web app, android app, ios app.
 2. How To Play: use guide from web app (www.fantasyfox.app) Create tab.
 3. League Formats: use guide from create league tab of web app.
