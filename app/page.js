@@ -4,11 +4,11 @@ import BannerTitle from '@/components/BannerTitle';
 export default function Page() {
     return (
         <div className='mainContainer'>
-            <div style={{ maxWidth: '1000px', width: '100%', padding: '20px', position: 'relative' }}>
+            <div className='container'>
                 {/* Image */}
-                <div style={{ position: 'relative', padding: '10px' }}>
+                <div className='div-image'>
                     {/* Logo */}
-                    <div style={{ position: 'absolute', top: '0px', left: '10px', zIndex: 10 }}>
+                    <div className='Logo'>
                         <BannerTitle />
                     </div>
 
@@ -24,34 +24,23 @@ export default function Page() {
 
                 {/* Links */}
                 <div
-                    style={{
-                        position: 'absolute',
-                        top: '50%',
-                        left: '20%',
-                        transform: 'translate(-50%, -50%)',
-                        display: 'flex',
-                        flexDirection: 'column',
-                        alignItems: 'center',
-                        gap: '10px',
-                        width: '80%',
-                        maxWidth: '200px',
-                    }}
+                    className='Main-Links'
                 >
                     {/* Web App Link */}
-                    <a href="/web-app-link" style={{ textDecoration: 'none', width: '100%' }}>
-                        <button style={{ padding: '10px 20px', backgroundColor: 'blue', color: 'white', border: 'none', borderRadius: '5px', cursor: 'pointer', width: '100%' }}>
+                    <a href="/web-app-link" className='links'>
+                        <button className='web-app'>
                             Web App
                         </button>
                     </a>
                     {/* Play Store Link */}
-                    <a href="/play-store-link" style={{ textDecoration: 'none', width: '100%' }}>
-                        <button style={{ padding: '10px 20px', backgroundColor: 'green', color: 'white', border: 'none', borderRadius: '5px', cursor: 'pointer', width: '100%' }}>
+                    <a href="/play-store-link" className='links'>
+                        <button className='play-store'>
                             Play Store
                         </button>
                     </a>
                     {/* App Store Link */}
-                    <a href="/app-store-link" style={{ textDecoration: 'none', width: '100%' }}>
-                        <button style={{ padding: '10px 20px', backgroundColor: 'orange', color: 'white', border: 'none', borderRadius: '5px', cursor: 'pointer', width: '100%' }}>
+                    <a href="/app-store-link" className='links'>
+                        <button className='app-store'>
                             App Store
                         </button>
                     </a>
