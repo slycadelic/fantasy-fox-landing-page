@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+/* main page styles */
+.mainContainer
+{
+    background-color: #262626;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
 
 .bannerTitleText
 {
