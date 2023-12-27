@@ -29,6 +29,7 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 - Dusty Grey         #878787     rgb(135,135,135)
 - Snow               #FBFBFB     rgb(251,251,251)
 **Use Contrasting font color for each background.**
+- used (https://csshero.org/mesher/) for generating background. 
 
 ### Pages
 + Home (1)

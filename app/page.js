@@ -1,27 +1,27 @@
 import Image from 'next/image';
-import BannerTitle from '@/components/BannerTitle';
-import Rules from '@/components/Rules';
+import BannerTitle from '@/components/home/BannerTitle';
+import How2Play from '@/components/home/How2Play';
+import styles from './home.module.css';
+
 export default function Page() {
+
     return (
-        <div className='mainContainer'>
-            <div className='container'>
+        <div className={styles.mainContainer}>
+            <div className={styles.container}>
                 {/* Image */}
-                <div className='div-image'>
+                <div className={styles.divImage}>
                     {/* Logo */}
-                    <div className='Logo'>
+                    <div className={styles.Logo}>
                         <BannerTitle />
                     </div>
-
                     {/* Main Image */}
                     <Image
                         src="/Banner.jpg"
                         width={1600}
                         height={1500}
-                        alt="Picture of the author"
-                        layout="responsive"
+                        alt="Main Banner"
                     />
                 </div>
-
                 {/* <div
                     className='Main-Links'
                 >
@@ -41,10 +41,7 @@ export default function Page() {
                         </button>
                     </a>
                 </div> */}
-
-              <Rules/>
-          
-          
+                <How2Play />
             </div>
         </div>
     );

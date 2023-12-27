@@ -1,8 +1,10 @@
+import styles from './BannerTitle.module.css';
+
 const BannerTitle = () => {
     return (
-        <svg viewBox="0 0 2000 2000" id='bannerTitle'>
+        <svg viewBox="0 0 2000 2000" className={styles.bannerTitle}>
             <path
-                className='bannerTitleText'
+                className={styles.bannerTitleText}
                 d="M337.8,461.64v20.64h151.11v30.03H337.8v50.67h-43.36V431.6h194.9v30.03H337.8z M658.48,541.6H550.3v21.37
                     h-39.5v-50.85l24.04-68.54h139.09l24.04,68.54v50.85h-39.5V541.6z M550.3,514.33h108.18l-15.67-43.48h-76.84L550.3,514.33z
                     M753.79,443.58l108.61,51.59v-51.59h39.5v119.39h-39.5v-33.35l-103.46-49.01v82.36h-39.5V443.58H753.79z M997.2,470.85h-73.84
@@ -20,18 +22,18 @@ const BannerTitle = () => {
             <g>
                 <g>
                     <path
-                        className='bannerTitleText'
+                        className={styles.bannerTitleText}
                         d="M379.37,701.21v45.15h296.01v65.71H379.37v110.86h-84.94V635.5h381.79v65.71H379.37z"
                     />
                     <path
-                        className='bannerTitleText'
+                        className={styles.bannerTitleText}
                         d="M1308.61,635.5h105.54l96.29,92.72l96.71-92.72h105.12l-149.27,143.92l149.27,143.51h-104.7l-97.13-93.12
 				            l-96.71,93.12h-105.12l148.85-143.51L1308.61,635.5z"
                     />
                 </g>
             </g>
             <path
-                id='bannerTitleLogo'
+                className={styles.bannerTitleLogo}
                 d="M851.29,851.87l27.67-15.52l35.49,64.28L851.29,851.87z M837.45,679.52l131.15,69.7l131.15-69.7v107.3
                     l219.07,101.79l-161.6-118.07V589.45L968.6,690.66L779.99,589.45v181.09l-161.6,118.07l219.07-101.79V679.52z M1232.91,875.77
                     h-67.56c-66.73,37.68-132.48,82.7-196.75,139.11c-64.26-56.4-130.02-101.43-196.75-139.11h-66.19l-94.03,68.7l97.83-45.46

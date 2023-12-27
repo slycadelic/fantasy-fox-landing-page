@@ -4,9 +4,11 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import Image from "next/image";
-import Title from '../public/Title.png'
+import Title from '../public/Title.png';
+import styles from './Navbar.module.css';
 
 const Header = () => {
+
     const [nav, setNav] = useState(false);
 
     const links = [
@@ -17,38 +19,21 @@ const Header = () => {
         },
         {
             id: 2,
-            link: "about",
+            link: "How To Play",
         },
         {
             id: 3,
-            link: "portfolio",
+            link: "F1 Standings",
         },
         {
             id: 4,
-            link: "experience",
-        },
-        {
-            id: 5,
-            link: "contact",
+            link: "Contact",
         },
     ];
 
     return (
-        <div className="header">
-            {/* <div>
-        <h1 className="text-5xl font-signature ml-2"><a className="link-underline hover:transition ease-in-out delay-150 hover:underline hover:decoration-solid" href="">Logo</a></h1>
-        <h1 className="text-5xl font-signature ml-2">
-          <a
-            className="link-underline link-underline-black"
-            
-            target="_blank"
-            rel="noreferrer"
-          >
-            
-          </a>
-        </h1>
-      </div> */}
-            <Link href='/' className='flex gap-2 '>
+        <div className={styles.header}>
+            <Link href='/' className='flex gap-2'>
                 <Image
                     src={Title}
                     alt='logo'
@@ -57,11 +42,11 @@ const Header = () => {
                     className='object-contain'
                 />
             </Link>
-            <ul className="hidden md:flex   mx-auto">
+            <ul className="hidden md:flex mx-auto">
                 {links.map(({ id, link }) => (
                     <li
                         key={id}
-                        className="nav-links"
+                        className={styles.navLinks}
                     >
                         <Link href={link}>{link}</Link>
                     </li>
@@ -73,9 +58,8 @@ const Header = () => {
             >
                 {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
             </div>
-
             {nav && (
-                <ul className="mobile-nav-links">
+                <ul className={styles.mobileNavLinks}>
                     {links.map(({ id, link }) => (
                         <li
                             key={id}
@@ -89,8 +73,6 @@ const Header = () => {
                 </ul>
             )}
         </div>
-
-
     );
 };
 

@@ -1,0 +1,61 @@
+/* Navbar styling  */
+.header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    /* Assuming you want a height of 20px, adjust as needed */
+    padding-left: 1rem;
+    /* Adjust according to px-4 */
+    padding-right: 1rem;
+    /* Adjust according to px-4 */
+    background-color: var(--darkVoid);
+    z-index: 1;
+}
+
+/* nav links styling */
+.navLinks
+{
+    padding-left: 1rem;
+    /* Adjust according to px-4 */
+    padding-right: 1rem;
+    /* Adjust according to px-4 */
+    cursor: pointer;
+    text-transform: capitalize;
+    font-weight: 500;
+    /* Adjust according to font-medium */
+    color: white;
+    /* Adjust according to text-gray-500 */
+    transition: transform 0.2s ease-in-out;
+    /* Adjust according to duration-200 */
+}
+
+.navLinks:hover
+{
+    transform: scale(1.05);
+    /* Adjust according to hover:scale-105 */
+    color: white;
+    /* Adjust according to hover:text-white */
+}
+
+/* Mobile Nav Links Styling  */
+.mobileNavLinks
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    /* Use vh for full viewport height */
+    background-image: linear-gradient(to bottom, black, #484848);
+    /* Adjust color values based on from-black and to-gray-800 */
+    color: #808080;
+    /* Adjust according to text-gray-500 */
+    z-index: 8;
+}
