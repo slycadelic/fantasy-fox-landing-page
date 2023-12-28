@@ -20,6 +20,7 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 + https://fantasy.formula1.com/en/
 + https://www.f1fantasytracker.com/
 + https://racingnews365.com/
++ https://css-tricks.com/practical-css-scroll-snapping/
 
 ## Color Scheme:
 - Dark Void          #151419     rgb(21,20,25)
@@ -30,6 +31,7 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 - Snow               #FBFBFB     rgb(251,251,251)
 **Use Contrasting font color for each background.**
 - used (https://csshero.org/mesher/) for generating background. 
+
 
 ### Pages
 + Home (1)
