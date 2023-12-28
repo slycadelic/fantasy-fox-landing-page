@@ -3,7 +3,7 @@
 {
     width: 100%;
     padding: 20px;
-    background-color: var(--snow);
+    background-color: var(--dustyGreyPale);
     display: flex;
     flex-direction: column;
     align-items: center;
