@@ -1,0 +1,55 @@
+/* Footer Styling  */
+
+.footer{
+    padding: 5.875rem 2.8571rem;
+    align-items: flex-start;
+    background-color: var(--gluonGrey);
+    color: white;
+}
+
+.footerContent{
+    max-width: 1220px;
+    grid-row-gap: 2.1875rem;
+    flex-direction: column;
+    align-items: stretch;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+    height: 2.3rem;
+    grid-column-gap: 1.5rem;
+    align-items: center;
+}
+
+.footnote{
+    width: 91%;
+    font-family: Univiapro Book, sans-serif;
+    font-size: .875rem;
+    line-height: 1.3em;
+}
+
+.footerSubUnit{
+    justify-content: space-between;
+    display: flex;
+}
+
+.copyrightText{
+    font-family: Univiapro, sans-serif;
+    font-size: .875rem;
+    font-weight: 500;
+    line-height: 1.3em;
+}
+
+.menuContainer{
+    grid-row-gap: 0.5rem;
+    flex-direction: row;
+    align-items: flex-start;
+    grid-column-gap: 1.5rem;
+    display: flex;
+}
+
+

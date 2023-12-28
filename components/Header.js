@@ -25,12 +25,12 @@ const Header = () => {
         {
             id: 3,
             link: "F1 Standings",
-            href: '/f1-standings' // Example: Add appropriate href for other links
+            href: '/F1Standing' // Example: Add appropriate href for other links
         },
         {
             id: 4,
             link: "Contact",
-            href: '/contact' // Example: Add appropriate href for other links
+            href: '/Contact' // Example: Add appropriate href for other links
         },
     ];
 

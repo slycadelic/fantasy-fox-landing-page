@@ -1,10 +1,58 @@
 import React from 'react'
+import Styles from './Footer.module.css'
+import Link from 'next/link'
+import Image from 'next/image'
+import Title from '../public/Title.png';
+
 
 const Footer = () => {
     return (
-        <div className='text-4xl font-bold text-center'>
-            Footer
-        </div>
+        <>
+        <section className={Styles.footer}>
+            <div className={Styles.footerContent}>
+                <div className={Styles.logo}>
+            <Link href='/'> {/* Adjust the 'href' for the home link */}
+                <Image
+                    src={Title}
+                    alt='logo'
+                    width={150}
+                    height={80}
+                    className='object-contain'
+                />
+            </Link>
+
+            <div className={Styles.socialsContainer}>
+               <Link href='/'>Facebook</Link>
+               <Link href='/'>Twitter</Link>
+               <Link href='/'>Instagram</Link>
+               <Link href='/'>YouTube</Link>
+
+            </div>
+            </div>
+
+
+            <div className={Styles.footnote} >
+                THis is the Description of the The Landing Page 
+            </div>
+            <div className={Styles.footerSubUnit}>
+                <div className={Styles.copyrightText}> CopyRight Text  </div>
+                <div className={Styles.menuContainer}>
+                    <Link href='/'>Support</Link>
+                    <Link href='/'>Privacy Policy</Link>
+                    <Link href='/'>Terms of Use </Link>
+                    <Link href='/'>Responsible Play </Link>
+                    <Link href='/'>Unofficial Application</Link>
+
+                </div>
+            </div>
+            </div>
+
+          
+
+        </section>
+        
+        </>
+       
     )
 }
 
