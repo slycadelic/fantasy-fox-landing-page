@@ -4,11 +4,23 @@
 
 :root
 {
-    --darkVoid: rgb(21,20,25);
-    --lava: rgb(245,110,15);
-    --gluonGrey: rgb(27,27,30);
-    --slateGrey: rgb(38,38,38);
-    --dustyGrey: rgb(135,135,135);
-    --snow: rgb(251,251,251);
+    --darkVoid: rgb(21, 20, 25);
+    --lava: rgb(245, 110, 15);
+    --gluonGrey: rgb(27, 27, 30);
+    --slateGrey: rgb(38, 38, 38);
+    --dustyGrey: rgb(135, 135, 135);
+    --dustyGreyPale: rgba(135,135,135,0.2);
+    --snow: rgb(251, 251, 251);
+    --snowPale: rgba(255, 255, 255, 0.2);
 }
 
+.layoutBG
+{
+    background-color: hsla(0, 0%, 14%, 1);
+    background-image:
+        radial-gradient(at 40% 20%, hsla(0, 4%, 25%, 1) 0px, transparent 50%),
+        radial-gradient(at 80% 0%, hsla(30, 39%, 20%, 0.7) 0px, transparent 50%),
+        radial-gradient(at 0% 50%, hsla(0, 3%, 15%, 1) 0px, transparent 50%),
+        radial-gradient(at 80% 50%, hsla(0, 8%, 10%, 1) 0px, transparent 50%),
+        radial-gradient(at 0% 100%, hsla(16, 68%, 20%, 1) 0px, transparent 50%);
+}

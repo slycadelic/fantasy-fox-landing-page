@@ -41,7 +41,7 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 1. Main Banner: with small boxes for links for web app, android app, ios app.
 2. How To Play: use guide from web app (www.fantasyfox.app) Create tab.
 3. League Formats: use guide from create league tab of web app.
-4. Start Playing Now: Download Links for apps.
+4. Play Now: Download Links for apps.
 5. F1 Standings and Races schedule.
 6. Fantasy Stats (race points, grid points, pos gain points, const bonus points, dnf penalties, F.Lap points)
 7. Footer: Social Links, download links, terms of service, disclaimer.
