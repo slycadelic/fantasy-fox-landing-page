@@ -4,6 +4,9 @@ import How2Play from '@/components/home/How2Play';
 import styles from './home.module.css';
 import LeagueFormats from '@/components/home/LeagueFormats'
 import StartNow from '@/components/home/StartNow'
+import PlayStore from '@/public/downloadApp2.png'
+import AppStore from '@/public/downloadApp3.png'
+
 
 export default function Page() {
 
@@ -23,26 +26,33 @@ export default function Page() {
                         height={1500}
                         alt="Main Banner"
                     />
-                </div>
-                {/* <div
-                    className='Main-Links'
+                
+                <div
+                    className={styles.MainLinks}
                 >
-                    <a href="/web-app-link" className='links'>
-                        <button className='web-app'>
-                            Web App
+                    {/* <a href="/web-app-link" className={styles.links}>
+                        <button className={styles.webApp}>
+                            <Image
+                            src={}
+                            />
+                        </button>
+                    </a> */}
+                    <a href="/play-store-link" className={styles.links}>
+                        <button className={styles.playStore}>
+                            <Image  
+                            src={PlayStore}
+                            />
                         </button>
                     </a>
-                    <a href="/play-store-link" className='links'>
-                        <button className='play-store'>
-                            Play Store
+                    <a href="/app-store-link" className={styles.links}>
+                        <button className={styles.appStore}>
+                            <Image  
+                            src={AppStore}
+                            />
                         </button>
                     </a>
-                    <a href="/app-store-link" className='links'>
-                        <button className='app-store'>
-                            App Store
-                        </button>
-                    </a>
-                </div> */}
+                </div>
+                </div>
                 <How2Play />
 
 

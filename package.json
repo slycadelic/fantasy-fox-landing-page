@@ -13,8 +13,11 @@
     "@fortawesome/free-brands-svg-icons": "^6.5.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "next": "14.0.4",
+    "next-share": "^0.27.0",
     "react": "^18",
     "react-dom": "^18",
+    "react-icons": "^4.12.0",
+    "react-social-icons": "^6.7.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",
