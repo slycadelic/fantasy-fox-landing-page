@@ -2,6 +2,8 @@ import Image from 'next/image';
 import BannerTitle from '@/components/home/BannerTitle';
 import How2Play from '@/components/home/How2Play';
 import styles from './home.module.css';
+import LeagueFormats from '@/components/home/LeagueFormats'
+import StartNow from '@/components/home/StartNow'
 
 export default function Page() {
 
@@ -42,6 +44,11 @@ export default function Page() {
                     </a>
                 </div> */}
                 <How2Play />
+
+
+                <LeagueFormats />
+
+                <StartNow />
             </div>
         </div>
     );

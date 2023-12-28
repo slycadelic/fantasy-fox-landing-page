@@ -1,5 +1,7 @@
-/* How to Play Styling  */
-.howToPlay
+/* League Formats Styling   */
+
+
+.LeagueFormat
 {
     width: 100%;
     padding: 20px;
@@ -9,12 +11,12 @@
     align-items: center;
 }
 
-.howToPlay h2
+.LeagueFormat h2
 {
     font-size: 2.5rem;
     /* Adjust the heading size */
     margin-bottom: 15px;
-    font-weight: 900;
+    font-weight: 800;
 }
 
 .steps

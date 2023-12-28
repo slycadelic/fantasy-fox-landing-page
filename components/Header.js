@@ -20,21 +20,23 @@ const Header = () => {
         {
             id: 2,
             link: "How To Play",
-            href: 'how2play'
+            href: '/HowToPlay' // Example: Add appropriate href for other links
         },
         {
             id: 3,
             link: "F1 Standings",
+            href: '/f1-standings' // Example: Add appropriate href for other links
         },
         {
             id: 4,
             link: "Contact",
+            href: '/contact' // Example: Add appropriate href for other links
         },
     ];
 
     return (
         <div className={styles.header}>
-            <Link href='/' className='flex gap-2'>
+            <Link href='/'> {/* Adjust the 'href' for the home link */}
                 <Image
                     src={Title}
                     alt='logo'
@@ -49,7 +51,7 @@ const Header = () => {
                         key={id}
                         className={styles.navLinks}
                     >
-                        <Link href='/'>{link}</Link>
+                        <Link href={href}>{link}</Link> {/* Use 'href' from the array */}
                     </li>
                 ))}
             </ul>
@@ -61,12 +63,12 @@ const Header = () => {
             </div>
             {nav && (
                 <ul className={styles.mobileNavLinks}>
-                    {links.map(({ id, link }) => (
+                    {links.map(({ id, link, href  }) => (
                         <li
                             key={id}
                             className="px-4 cursor-pointer capitalize py-6 text-4xl"
                         >
-                            <Link onClick={() => setNav(!nav)} href={link}>
+                            <Link onClick={() => setNav(!nav)} href={href}>
                                 {link}
                             </Link>
                         </li>
