@@ -1,8 +1,12 @@
+'use client'
+
 import React from 'react'
 import Styles from './Footer.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
 import Title from '../public/Title.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faTwitter, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 
 const Footer = () => {
@@ -22,10 +26,18 @@ const Footer = () => {
             </Link>
 
             <div className={Styles.socialsContainer}>
-               <Link href='/'>Facebook</Link>
-               <Link href='/'>Twitter</Link>
-               <Link href='/'>Instagram</Link>
-               <Link href='/'>YouTube</Link>
+            <Link href='/'>
+                            <FontAwesomeIcon  className=' h-8' icon={faFacebook} />
+                        </Link>
+                        <Link href='/'>
+                            <FontAwesomeIcon className='h-8' icon={faTwitter} />
+                        </Link>
+                        <Link href='/'>
+                            <FontAwesomeIcon className='h-8' icon={faInstagram} />
+                        </Link>
+                        <Link href='/'>
+                            <FontAwesomeIcon className='h-8' icon={faLinkedin} />
+                        </Link>
 
             </div>
             </div>

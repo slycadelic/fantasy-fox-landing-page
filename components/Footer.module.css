@@ -37,6 +37,15 @@
     display: flex;
 }
 
+
+.socialsContainer{
+
+    height: 4.3rem;
+    width: 10%;
+    grid-column-gap: 1.5rem;
+    align-items: center;
+    display: flex;
+}
 .copyrightText{
     font-family: Univiapro, sans-serif;
     font-size: .875rem;
