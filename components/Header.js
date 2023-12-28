@@ -20,6 +20,7 @@ const Header = () => {
         {
             id: 2,
             link: "How To Play",
+            href: 'how2play'
         },
         {
             id: 3,
@@ -43,12 +44,12 @@ const Header = () => {
                 />
             </Link>
             <ul className="hidden md:flex mx-auto">
-                {links.map(({ id, link }) => (
+                {links.map(({ id, link, href }) => (
                     <li
                         key={id}
                         className={styles.navLinks}
                     >
-                        <Link href={link}>{link}</Link>
+                        <Link href='/'>{link}</Link>
                     </li>
                 ))}
             </ul>
