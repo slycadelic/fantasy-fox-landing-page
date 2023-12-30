@@ -47,10 +47,11 @@
 
 .stepIcon
 {
-    width: 50px;
+    width: 100px;
     /* Adjust the icon size */
-    height: 50px;
+    height: 80px;
     margin-bottom: 10px;
+   
 }
 
 /* Media query for responsiveness */

@@ -6,6 +6,7 @@ import LeagueFormats from '@/components/home/LeagueFormats'
 import StartNow from '@/components/home/StartNow'
 import PlayStore from '@/public/downloadApp2.png'
 import AppStore from '@/public/downloadApp3.png'
+import PlayNow from '@/public/PlayNow.png'
 
 
 export default function Page() {
@@ -30,13 +31,13 @@ export default function Page() {
                 <div
                     className={styles.MainLinks}
                 >
-                    {/* <a href="/web-app-link" className={styles.links}>
+                    <a href="/web-app-link" className={styles.links}>
                         <button className={styles.webApp}>
-                            <Image
-                            src={}
+                        <Image  
+                            src={PlayNow}
                             />
                         </button>
-                    </a> */}
+                    </a>
                     <a href="/play-store-link" className={styles.links}>
                         <button className={styles.playStore}>
                             <Image  

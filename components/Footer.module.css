@@ -2,13 +2,14 @@
 
 .footer{
     padding: 5.875rem 2.8571rem;
-    align-items: flex-start;
     background-color: var(--gluonGrey);
     color: white;
+    justify-content: center;
 }
 
 .footerContent{
-    max-width: 1220px;
+    max-width: 1000px;
+    width: 100%;
     grid-row-gap: 2.1875rem;
     flex-direction: column;
     align-items: stretch;
@@ -20,7 +21,7 @@
 .logo{
     display: flex;
     justify-content: space-between;
-    height: 2.3rem;
+    height: 3.3rem;
     grid-column-gap: 1.5rem;
     align-items: center;
 }
@@ -40,9 +41,9 @@
 
 .socialsContainer{
 
-    height: 4.3rem;
+    height: 3.3rem;
     width: 10%;
-    grid-column-gap: 1.5rem;
+    grid-column-gap: 0.5rem;
     align-items: center;
     display: flex;
 }
@@ -62,3 +63,59 @@
 }
 
 
+
+
+
+/* Media query for mobile devices */
+
+
+
+@media screen and (max-width: 767px){
+
+.footer {
+    padding-left: 3.025rem;
+    padding-right: 3.025rem;
+}
+
+.logo {
+    grid-row-gap: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.socials-container {
+    height: 2.9rem;
+    margin-bottom: 10px;
+}
+
+.socials {
+    width: 2rem;
+    height: auto;
+}
+
+.menuContainer {
+    grid-row-gap: 0.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+}
+}
+
+@media screen and (max-width: 991px) {
+
+.footer {
+    padding-left: 2.125rem;
+    padding-right: 2.125rem;
+}
+.footnote {
+    width: 97%;
+    margin-top: 20px;
+
+}
+
+.footerSubUnit {
+    grid-row-gap: 1.875rem;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+}
+
+}

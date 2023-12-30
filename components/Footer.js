@@ -26,16 +26,16 @@ const Footer = () => {
             </Link>
 
             <div className={Styles.socialsContainer}>
-            <Link href='/'>
+            <Link href='/' className={Styles.socials}>
                             <FontAwesomeIcon  className=' h-8' icon={faFacebook} />
                         </Link>
-                        <Link href='/'>
+                        <Link href='/' className={Styles.socials}>
                             <FontAwesomeIcon className='h-8' icon={faTwitter} />
                         </Link>
-                        <Link href='/'>
+                        <Link href='/' className={Styles.socials} >
                             <FontAwesomeIcon className='h-8' icon={faInstagram} />
                         </Link>
-                        <Link href='/'>
+                        <Link href='/' className={Styles.socials}>
                             <FontAwesomeIcon className='h-8' icon={faLinkedin} />
                         </Link>
 
