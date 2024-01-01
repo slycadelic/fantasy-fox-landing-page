@@ -12,6 +12,7 @@ import PlayNow from '@/public/PlayNow.png'
 export default function Page() {
 
     return (
+        <>
         <div className={styles.mainContainer}>
             <div className={styles.container}>
                 {/* Image */}
@@ -62,5 +63,6 @@ export default function Page() {
                 <StartNow />
             </div>
         </div>
+        </>
     );
 }

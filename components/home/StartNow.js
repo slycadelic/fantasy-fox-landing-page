@@ -2,6 +2,8 @@ import styles from './StartNow.module.css'
 import PlayNow from '@/public/PlayNow.png'
 import Image from 'next/image'
 import mobileApp from '@/public/mobileApp2.png'
+import PlayStore from '@/public/downloadApp2.png'
+import AppStore from '@/public/downloadApp3.png'
 
 const How2Play = () => {
     return (
@@ -11,18 +13,34 @@ const How2Play = () => {
                 <h2>Start Playing Now </h2>
                 <div className={styles.steps}>
                     <div className={styles.step}>
-                        <Image 
-                        src={PlayNow} alt='Step 1 Icon' className={styles.stepIcon} />
-                        <h3>Step 1</h3>
-                        <p>Description of step 1</p>
+                    <a href="/web-app-link" className={styles.links}>
+                        <button className={styles.webApp}>
+                        <Image  
+                            src={PlayNow}
+                            />
+                        </button>
+                    </a>
+                    <a href="/play-store-link" className={styles.links}>
+                        <button className={styles.playStore}>
+                            <Image  
+                            src={PlayStore}
+                            />
+                        </button>
+                    </a>
+                    <a href="/app-store-link" className={styles.links}>
+                        <button className={styles.appStore}>
+                            <Image  
+                            src={AppStore}
+                            />
+                        </button>
+                    </a>
                     </div>
                     <div className={styles.step}>
                         <Image 
                         width={100}
                         height={100}
                         src={mobileApp} alt='Step 2 Icon' className={styles.stepIcon} />
-                        <h3>Step 2</h3>
-                        <p>Description of step 2</p>
+                        
                     </div>
                    
                 </div>

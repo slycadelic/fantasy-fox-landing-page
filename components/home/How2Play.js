@@ -1,11 +1,16 @@
 import styles from './How2Play.module.css'
 
+
+
 const How2Play = () => {
     return (
         <>
             {/* How to Play Section */}
-            <div className={styles.howToPlay}>
-                <h2>How to Play</h2>
+            <div 
+            className={styles.howToPlay}>
+                
+                <h2  
+            >How to Play</h2>
                 <div className={styles.steps}>
                     <div className={styles.step}>
                         <img src='/step1-icon.png' alt='Step 1 Icon' className={styles.stepIcon} />
@@ -27,6 +32,7 @@ const How2Play = () => {
                         <h3>Step 4</h3>
                         <p>Description of step 4</p>
                     </div>
+                    
                 </div>
             </div>
         </>

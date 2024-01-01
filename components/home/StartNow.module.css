@@ -34,7 +34,7 @@
 
 .step
 {
-    width: 400px;
+    width: 200px;
     /* Adjust the width of steps for responsiveness */
     padding: 15px;
     margin-bottom: 20px;
@@ -47,9 +47,9 @@
 
 .stepIcon
 {
-    width: 100px;
+    width: 200px;
     /* Adjust the icon size */
-    height: 80px;
+    height: 200px;
     margin-bottom: 10px;
    
 }
