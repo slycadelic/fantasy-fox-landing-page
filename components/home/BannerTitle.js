@@ -1,8 +1,9 @@
-import styles from './BannerTitle.module.css';
+import styles from './Banner.module.css';
 
 const BannerTitle = () => {
+
     return (
-        <svg viewBox="0 0 2000 2000" className={styles.bannerTitle}>
+        <svg viewBox="0 0 2000 2000">
             <path
                 className={styles.bannerTitleText}
                 d="M337.8,461.64v20.64h151.11v30.03H337.8v50.67h-43.36V431.6h194.9v30.03H337.8z M658.48,541.6H550.3v21.37
