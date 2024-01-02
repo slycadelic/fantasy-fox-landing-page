@@ -12,9 +12,9 @@
     --gluonGrey: rgb(27, 27, 30);
     --slateGrey: rgb(38, 38, 38);
     --dustyGrey: rgb(135, 135, 135);
-    --dustyGreyPale: rgba(135,135,135,0.2);
+    --dustyGreyPale: rgba(135,135,135,0.9);
     --snow: rgb(251, 251, 251);
-    --snowPale: rgba(255, 255, 255, 0.2);
+    --snowPale: rgba(255, 255, 255, 0.9);
 }
 
 .layoutBG

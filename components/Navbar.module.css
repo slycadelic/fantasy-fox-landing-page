@@ -13,6 +13,7 @@
     /* Adjust according to px-4 */
      background-color: var(--darkVoid); 
     z-index: 1;
+    position: fixed;
 }
 
 /* nav links styling */

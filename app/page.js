@@ -6,7 +6,8 @@ import LeagueFormats from '@/components/home/LeagueFormats'
 import StartNow from '@/components/home/StartNow'
 import PlayStore from '@/public/downloadApp2.png'
 import AppStore from '@/public/downloadApp3.png'
-import PlayNow from '@/public/PlayNow.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlay } from '@fortawesome/free-solid-svg-icons';
 
 
 export default function Page() {
@@ -14,7 +15,7 @@ export default function Page() {
     return (
         <>
         <div className={styles.mainContainer}>
-            <div className={styles.container}>
+        <div className={styles.container}>
                 {/* Image */}
                 <div className={styles.divImage}>
                     {/* Logo */}
@@ -27,6 +28,7 @@ export default function Page() {
                         width={1600}
                         height={1500}
                         alt="Main Banner"
+                      
                     />
                 
                 <div
@@ -34,9 +36,10 @@ export default function Page() {
                 >
                     <a href="/web-app-link" className={styles.links}>
                         <button className={styles.webApp}>
-                        <Image  
-                            src={PlayNow}
-                            />
+
+                        
+                        <FontAwesomeIcon  className='h-5 mr-1'  icon={faPlay} />
+Play Now 
                         </button>
                     </a>
                     <a href="/play-store-link" className={styles.links}>

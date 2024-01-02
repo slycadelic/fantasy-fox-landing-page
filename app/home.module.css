@@ -12,11 +12,19 @@
 {
     max-width: 1200px;
     width: 100%;
+    /* Adjust the z-index as needed */
+    /* Add any other styling you need */
 }
+
+
+  
 
 .divImage
 {
-    position: relative;
+    position: fixed;
+    top: 0;
+    width: 1200px;
+    z-index: -1;
 }
 
 
@@ -24,7 +32,7 @@
 {
     width: 55%;
     position: absolute;
-    top: 5%;
+    top: 0;
     left: 0px;
 }
 
@@ -47,6 +55,7 @@
 {
     text-decoration: none;
     width: 100%;
+   
 
 
 }
@@ -62,12 +71,15 @@
 /* buttons styling  */
 .webApp
 {
-    background-color: blue;
-    color: white;
+    background-color: black;
+    color: azure;
     border: none;
-    border-radius: 5px;
+    border-radius: 3px;
     cursor: pointer;
+    height: 26px;
     width: 100%;
+    
+    font-size: small;
 }
 
 .playStore

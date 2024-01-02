@@ -4,6 +4,10 @@ import Image from 'next/image'
 import mobileApp from '@/public/mobileApp2.png'
 import PlayStore from '@/public/downloadApp2.png'
 import AppStore from '@/public/downloadApp3.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import  { faPlay }  from "@fortawesome/free-solid-svg-icons";
+
+
 
 const How2Play = () => {
     return (
@@ -14,10 +18,11 @@ const How2Play = () => {
                 <div className={styles.steps}>
                     <div className={styles.step}>
                     <a href="/web-app-link" className={styles.links}>
-                        <button className={styles.webApp}>
-                        <Image  
-                            src={PlayNow}
-                            />
+                    <button className={styles.play}>
+                        
+                            <FontAwesomeIcon  className='h-8 mr-2' icon={faPlay} />
+Play Now 
+                        
                         </button>
                     </a>
                     <a href="/play-store-link" className={styles.links}>

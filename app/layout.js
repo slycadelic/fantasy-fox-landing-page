@@ -19,15 +19,7 @@ export default function RootLayout({ children }) {
             <body className={[inter.className, ' layoutBG']}>
                
                 <Header />
-                <Image
-  src={Banner}
-  layout="fill"
-  objectFit="cover"
-  style={{
-    backgroundAttachment: 'fixed',
-    marginTop: '3.5rem',
-  }}
-/>
+                
              
             {children}
 

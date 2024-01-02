@@ -51,9 +51,31 @@
     /* Adjust the icon size */
     height: 200px;
     margin-bottom: 10px;
+  
    
 }
 
+/* Update the styles in StartNow.module.css */
+.play {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: none;
+    border-radius: 8px;
+    background-color: black; /* Set your desired background color */
+    color: #fff; /* Set text color */
+    font-size: 23px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+    /* Other styles */
+  }
+  
+  .play:hover {
+    background-color: gray; /* Set your desired hover background color */
+  }
+  
 /* Media query for responsiveness */
 @media screen and (max-width: 768px)
 {
