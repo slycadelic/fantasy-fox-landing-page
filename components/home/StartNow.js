@@ -1,7 +1,7 @@
 import styles from './StartNow.module.css'
 import PlayNow from '@/public/PlayNow.png'
 import Image from 'next/image'
-import mobileApp from '@/public/mobileApp2.png'
+import mobileApp1 from '@/public/mobileApp1.png'
 import PlayStore from '@/public/downloadApp2.png'
 import AppStore from '@/public/downloadApp3.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -17,14 +17,12 @@ const How2Play = () => {
                 <h2>Start Playing Now </h2>
                 <div className={styles.steps}>
                     <div className={styles.step}>
-                        <a href="/web-app-link" className={styles.links}>
-                            <button className={styles.play}>
-
-                                <FontAwesomeIcon className='h-8 mr-2' icon={faPlay} />
-                                Play Now
-
-                            </button>
-                        </a>
+                    <a href="/web-app-link" className={styles.links}>
+                    <button className={styles.webApp}>
+                        <span>Play Now</span>
+                        <FontAwesomeIcon icon={faPlay} />
+                    </button>
+                </a>
                         <a href="/play-store-link" className={styles.links}>
                             <button className={styles.playStore}>
                                 <Image
@@ -44,7 +42,7 @@ const How2Play = () => {
                         <Image
                             width={100}
                             height={100}
-                            src={mobileApp} alt='Step 2 Icon' className={styles.stepIcon} />
+                            src={mobileApp1} alt='Step 2 Icon' className={styles.stepIcon} />
 
                     </div>
 
