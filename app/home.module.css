@@ -5,13 +5,10 @@
     display: flex;
     justify-content: center;
     z-index: 0;
-    padding: 0 10px;
 }
 
 .container
 {
     max-width: 1200px;
     width: 100%;
-    /* Adjust the z-index as needed */
-    /* Add any other styling you need */
 }

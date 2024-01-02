@@ -20,54 +20,45 @@ const Header = () => {
         {
             id: 2,
             link: "How To Play",
-            href: '/HowToPlay' // Example: Add appropriate href for other links
+            href: '/HowToPlay'
         },
         {
             id: 3,
             link: "F1 Standings",
-            href: '/F1Standing' // Example: Add appropriate href for other links
+            href: '/F1Standing'
         },
         {
             id: 4,
             link: "Contact",
-            href: '/Contact' // Example: Add appropriate href for other links
+            href: '/Contact'
         },
     ];
 
     return (
         <div className={styles.header}>
-            <Link href='/'> {/* Adjust the 'href' for the home link */}
+            <Link href='/'>
                 <Image
                     src={Title}
                     alt='logo'
-                    width={100}
+                    width={120}
                     height={60}
-                    className='object-contain'
                 />
             </Link>
-            <ul className="hidden md:flex mx-auto">
+            <ul className={styles.navLinks}>
                 {links.map(({ id, link, href }) => (
-                    <li
-                        key={id}
-                        className={styles.navLinks}
-                    >
+                    <li key={id}>
                         <Link href={href}>{link}</Link> {/* Use 'href' from the array */}
                     </li>
                 ))}
             </ul>
-            <div
-                onClick={() => setNav(!nav)}
-                className="cursor-pointer pr-4 z-10 text-gray-500 md:hidden"
-            >
+            <span style={{ width: '120px' }} />
+            <div onClick={() => setNav(!nav)} className={styles.mobileNavIcon}>
                 {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
             </div>
             {nav && (
-                <ul className={styles.mobileNavLinks}>
-                    {links.map(({ id, link, href  }) => (
-                        <li
-                            key={id}
-                            className="px-4 cursor-pointer capitalize py-6 text-4xl"
-                        >
+                <ul className={[styles.mobileNavLinks]}>
+                    {links.map(({ id, link, href }) => (
+                        <li key={id}>
                             <Link onClick={() => setNav(!nav)} href={href}>
                                 {link}
                             </Link>

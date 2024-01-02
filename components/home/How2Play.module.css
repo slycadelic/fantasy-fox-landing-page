@@ -4,7 +4,7 @@
     width: 100%;
     margin-top: 42.5rem;
     padding: 20px;
-    background-color: var(--dustyGreyPale);
+    background-color: var(--dustyGrey);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,9 +46,7 @@
 
 .stepIcon
 {
-    width: 50px;
-    /* Adjust the icon size */
-    height: 50px;
+   
     margin-bottom: 10px;
 }
 

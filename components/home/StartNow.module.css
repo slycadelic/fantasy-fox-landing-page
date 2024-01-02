@@ -1,9 +1,4 @@
 /* Start Playing Now Styling  */
-
-
-  @import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
-
-
 .PlayNow
 {
     width: 100%;
@@ -21,7 +16,6 @@
     /* Adjust the heading size */
     margin-bottom: 15px;
     font-weight: 900;
-    font-family: 'RubikDoodleShadow';
 }
 
 .steps
@@ -38,25 +32,14 @@
 
 .step
 {
-    width: 200px;
+    width: 50%;
     /* Adjust the width of steps for responsiveness */
     padding: 15px;
     margin-bottom: 20px;
     /* Step background color */
     border-radius: 8px;
-    gap: 2rem;
     
     /* Add a subtle shadow */
-}
-
-.stepIcon
-{
-    width: 300px;
-    /* Adjust the icon size */
-    height: 500px;
-    margin-bottom: 10px;
-  
-   
 }
 
 .links
@@ -81,7 +64,7 @@
     border-radius: 8px;
     cursor: pointer;
     height: 55px;
-    width: 170px;
+    width: 155px;
     font-size: 20px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;

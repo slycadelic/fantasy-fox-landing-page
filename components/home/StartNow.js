@@ -1,7 +1,7 @@
 import styles from './StartNow.module.css'
 import PlayNow from '@/public/PlayNow.png'
 import Image from 'next/image'
-import mobileApp1 from '@/public/mobileApp1.png'
+import mobileApp1 from '@/public/mobileApp4.png'
 import PlayStore from '@/public/downloadApp2.png'
 import AppStore from '@/public/downloadApp3.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -17,16 +17,20 @@ const How2Play = () => {
                 <h2>Start Playing Now </h2>
                 <div className={styles.steps}>
                     <div className={styles.step}>
-                    <a href="/web-app-link" className={styles.links}>
-                    <button className={styles.webApp}>
-                        <span>Play Now</span>
-                        <FontAwesomeIcon icon={faPlay} />
-                    </button>
-                </a>
+                        <a href="/web-app-link" className={styles.links}>
+                            <button className={styles.webApp}>
+                                <span>Play Now</span>
+                                <FontAwesomeIcon icon={faPlay} />
+                            </button>
+                        </a>
                         <a href="/play-store-link" className={styles.links}>
                             <button className={styles.playStore}>
                                 <Image
                                     src={PlayStore}
+                                    alt={'ios App'}
+                                    width={155}
+                                    height={48}
+                                    quality={100}
                                 />
                             </button>
                         </a>
@@ -34,15 +38,22 @@ const How2Play = () => {
                             <button className={styles.appStore}>
                                 <Image
                                     src={AppStore}
+                                    alt={'ios App'}
+                                    width={155}
+                                    height={48}
+                                    quality={100}
                                 />
                             </button>
                         </a>
                     </div>
                     <div className={styles.step}>
                         <Image
-                            width={100}
-                            height={100}
-                            src={mobileApp1} alt='Step 2 Icon' className={styles.stepIcon} />
+                            width={450}
+                            height={250}
+                            src={mobileApp1} alt='Mobile App' 
+                            className={styles.stepIcon}
+                            quality={100}
+                        />
 
                     </div>
 
