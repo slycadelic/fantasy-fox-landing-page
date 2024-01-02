@@ -56,32 +56,36 @@
 {
     position: absolute;
     top: 80%;
-    left: 25%;
-    transform: translate(-50%, -50%);
+    left: 0;
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 10px;
-    width: 50%;
-    max-width: 250px;
+    width: 100%;
+    padding: 0 20px;
 }
 
 .links
 {
-    text-decoration: none;
-    width: 100%;
-
-
-
+    max-width: 155;
+    cursor: pointer;
+    height: 60px;
 }
 
-@media screen and (max-width: 550px)
+.links>button
+{
+    align-items: center;
+}
+
+@media screen and (max-width: 600px)
 {
     .MainLinks
     {
+        top: 50%;
         flex-direction: column;
-        max-width: 80px;
-        column-gap: 3;
+        width: 200px;
+        height: 'auto';
+        justify-content: flex-start;
     }
 }
 
@@ -90,30 +94,24 @@
 {
     background-color: black;
     color: azure;
+    margin: 0;
+    padding: 0;
     border: none;
-    border-radius: 3px;
+    border-radius: 8px;
     cursor: pointer;
-    height: 26px;
-    width: 100%;
-
-    font-size: small;
+    height: 52px;
+    width: 155px;
+    font-size: 20px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
 }
 
-.playStore
+.webApp>span
 {
-
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-}
-
-.appStore
-{
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
+    padding: 10px;
 }

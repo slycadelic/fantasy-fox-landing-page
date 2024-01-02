@@ -37,19 +37,21 @@ const Banner = () => {
                     />
                 )
             }
-            <div
-                className={styles.MainLinks}
-            >
+            <div className={styles.MainLinks}>
                 <a href="/web-app-link" className={styles.links}>
                     <button className={styles.webApp}>
-                        <FontAwesomeIcon className='h-5 mr-1' icon={faPlay} />
-                        Play Now
+                        <span>Play Now</span>
+                        <FontAwesomeIcon icon={faPlay} />
                     </button>
                 </a>
                 <a href="/play-store-link" className={styles.links}>
                     <button className={styles.playStore}>
                         <Image
                             src={PlayStore}
+                            alt={'Android App'}
+                            width={155}
+                            height={48}
+                            className={styles.linkImage}
                         />
                     </button>
                 </a>
@@ -57,6 +59,9 @@ const Banner = () => {
                     <button className={styles.appStore}>
                         <Image
                             src={AppStore}
+                            alt={'ios App'}
+                            width={155}
+                            height={48}
                         />
                     </button>
                 </a>
