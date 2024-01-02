@@ -1,62 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200;0,300;0,400;0,700;1,200;1,300;1,400;1,700&display=swap');
+/* font-family: 'Crimson Pro', serif; */
+
 /* How to Play Styling  */
 .howToPlay
 {
     width: 100%;
-    margin-top: 42.5rem;
-    padding: 20px;
-    background-color: var(--dustyGrey);
+    margin-top: 720px;
+    padding: 20px 0;
+    background-color: var(--slateGrey);
     display: flex;
     flex-direction: column;
+    gap: 20px;
     align-items: center;
 }
 
-.howToPlay h2
+.howToPlay h3
 {
     color: white;
-    font-size: 2.5rem;
-    /* Adjust the heading size */
-    margin-bottom: 15px;
-    font-weight: 900;
+    font-size: 40px;
+    font-weight: bold;
 }
 
 .steps
 {
     width: 100%;
-    height: 200px;
+    height: 250px;
+    padding: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    gap: 20px;
     align-items: center;
-    gap: 1rem;
 }
 
-
-.step
+.steps>div
 {
-    width: 200px;
-    /* Adjust the width of steps for responsiveness */
+    flex: 1;
+    height: 100%;
     padding: 15px;
-    margin-bottom: 20px;
     background-color: #ffffff;
-    /* Step background color */
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    /* Add a subtle shadow */
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    position: relative;
 }
 
-.stepIcon
+.steps>div>span:first-child
 {
-   
-    margin-bottom: 10px;
+    position: absolute;
+    top: -30px;
+    height: 31px;
+    background-color: #ffffff;
+    padding: 0 15px;
+    border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -ms-border-radius: 5px 5px 0 0;
+    -o-border-radius: 5px 5px 0 0;
+    font-family: 'Crimson Pro', serif;
+    font-weight: bold;
+    font-size: 26px;
+    vertical-align: text-top;
+    margin: 0;
 }
 
 /* Media query for responsiveness */
-@media screen and (max-width: 768px)
-{
-    .steps
-    {
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-    }
-}
+@media screen and (max-width: 600px)
+{}

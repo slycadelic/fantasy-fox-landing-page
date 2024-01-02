@@ -11,6 +11,9 @@ const Header = () => {
 
     const [nav, setNav] = useState(false);
 
+    // TODO: Using a hook to get window scroll position, change the opacity of the navbar's background color. 
+    // Increasing as we scroll down.
+
     const links = [
         {
             id: 1,

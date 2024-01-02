@@ -9,19 +9,13 @@ import Banner from '@/components/home/Banner';
 export default function Page() {
 
     return (
-        <>
-            <div className={styles.mainContainer}>
-                <div className={styles.container}>
-                    <Banner />
-
-                    <How2Play />
-
-
-                    <LeagueFormats />
-
-                    <StartNow />
-                </div>
+        <div className={styles.mainContainer}>
+            <div className={styles.container}>
+                <Banner />
+                <How2Play />
+                <LeagueFormats />
+                <StartNow />
             </div>
-        </>
+        </div>
     );
 }
