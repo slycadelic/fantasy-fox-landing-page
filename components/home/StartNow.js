@@ -1,13 +1,11 @@
-import styles from './StartNow.module.css'
-import PlayNow from '@/public/PlayNow.png'
-import Image from 'next/image'
-import mobileApp1 from '@/public/mobileApp4.png'
-import PlayStore from '@/public/downloadApp2.png'
-import AppStore from '@/public/downloadApp3.png'
+import styles from './StartNow.module.css';
+import PlayNow from '@/public/PlayNow.png';
+import Image from 'next/image';
+import mobileApp1 from '@/public/mobileApp4.png';
+import PlayStore from '@/public/downloadApp2.png';
+import AppStore from '@/public/downloadApp3.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
-
-
 
 const How2Play = () => {
     return (
@@ -16,7 +14,6 @@ const How2Play = () => {
             <div className={styles.PlayNow}>
                 <h2>Start Playing Now </h2>
                 <div className={styles.steps}>
-                    <div className={styles.step}>
                         <a href="/web-app-link" className={styles.links}>
                             <button className={styles.webApp}>
                                 <span>Play Now</span>
@@ -45,22 +42,21 @@ const How2Play = () => {
                                 />
                             </button>
                         </a>
-                    </div>
-                    <div className={styles.step}>
+                        <div className={styles.step}>
                         <Image
                             width={450}
                             height={250}
-                            src={mobileApp1} alt='Mobile App' 
+                            src={mobileApp1}
+                            alt='Mobile App'
                             className={styles.stepIcon}
                             quality={100}
                         />
-
                     </div>
-
+                    </div>
+                   
                 </div>
-            </div>
         </>
     )
 }
 
-export default How2Play
+export default How2Play;
