@@ -66,6 +66,17 @@
     margin: 0;
 }
 
+
+
+.tyres{
+    display: flex;
+    justify-content: center;
+}
+
+.helmets{
+    display: flex;
+
+}
 /* Media query for responsiveness */
 @media screen and (max-width: 600px)
 {

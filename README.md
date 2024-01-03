@@ -47,3 +47,5 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 5. F1 Standings and Races schedule.
 6. Fantasy Stats (race points, grid points, pos gain points, const bonus points, dnf penalties, F.Lap points)
 7. Footer: Social Links, download links, terms of service, disclaimer.
+
+

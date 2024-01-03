@@ -1,6 +1,9 @@
+import  FantasyFoxsvg  from './FantasyFoxsvg.js';
+import Helmetsvg from './Helmetsvg.js';
 import styles from './How2Play.module.css';
+import React from 'react';
 
-const How2Play = () => {
+const How2Play = ( props) => {
 
     // TODO: 
     // Add fonts to heading p (second child) and text p (third child).
@@ -10,6 +13,8 @@ const How2Play = () => {
     // Step3: Driver helmet svg's and Race Car SVG.
     // Step4: Bonus Chip Pics and Race Flag Pic.
 
+   
+
     return (
         <div className={styles.howToPlay}>
             <h3>How to Play</h3>
@@ -18,6 +23,12 @@ const How2Play = () => {
                     <span>Step 1</span>
                     <p>Select League Format</p>
                     <p>Select a pre-defined format (Soft, Medium, Hard) or customize and create your own custom league.</p>
+                    <div className={styles.tyres}>
+                    <FantasyFoxsvg   stroke='green'  />
+                    <FantasyFoxsvg   stroke='blue'  />
+                    <FantasyFoxsvg   stroke='yellow'  />
+                    </div>
+                    
                     {/* League Tyre x3 */}
                 </div>
                 <div>
@@ -30,6 +41,12 @@ const How2Play = () => {
                     <p>Create New Team</p>
                     <p>Select drivers and a team principal based on the league selection system.</p>
                     {/* Driver Helmet x3 */}
+                    <div className={styles.helmets}>
+                    <Helmetsvg />
+                    <Helmetsvg />
+                    <Helmetsvg />
+
+                    </div>
                 </div>
                 <div>
                     <span>Step 4</span>
