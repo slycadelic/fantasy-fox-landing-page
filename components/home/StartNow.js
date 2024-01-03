@@ -44,8 +44,8 @@ const How2Play = () => {
                         </a>
                         <div className={styles.step}>
                         <Image
-                            width={450}
-                            height={250}
+                            width={400}
+                            height={230}
                             src={mobileApp1}
                             alt='Mobile App'
                             className={styles.stepIcon}

@@ -16,6 +16,7 @@
     /* Adjust the heading size */
     margin-bottom: 15px;
     font-weight: 900;
+    margin-top: 2rem;
 }
 
 .steps
@@ -26,7 +27,7 @@
     flex-direction: row;
     align-items: center;
     gap: 1rem;
-    margin: 3rem;
+    margin: 1rem;
 }
 
 

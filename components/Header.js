@@ -6,10 +6,15 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import Image from "next/image";
 import Title from '../public/Title.png';
 import styles from './Navbar.module.css';
+import useWindowScroll from "@/hooks/useWindowScroll";
 
 const Header = () => {
 
     const [nav, setNav] = useState(false);
+    const scrollY = useWindowScroll();
+    const[background,setBackground] = useState()
+    console.log(Math.round(scrollY))
+
 
     // TODO: Using a hook to get window scroll position, change the opacity of the navbar's background color. 
     // Increasing as we scroll down.
