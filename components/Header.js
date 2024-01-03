@@ -11,13 +11,9 @@ import useWindowScroll from "@/hooks/useWindowScroll";
 const Header = () => {
 
     const [nav, setNav] = useState(false);
+
     const scrollY = useWindowScroll();
-    const[background,setBackground] = useState()
-    console.log(Math.round(scrollY))
-
-
-    // TODO: Using a hook to get window scroll position, change the opacity of the navbar's background color. 
-    // Increasing as we scroll down.
+    const backgroundColor = `rgba(0,0,0,${scrollY / 1000})`;
 
     const links = [
         {
@@ -43,7 +39,7 @@ const Header = () => {
     ];
 
     return (
-        <div className={styles.header}>
+        <div className={styles.header} style={{ backgroundColor }}>
             <Link href='/'>
                 <Image
                     src={Title}
@@ -55,7 +51,7 @@ const Header = () => {
             <ul className={styles.navLinks}>
                 {links.map(({ id, link, href }) => (
                     <li key={id}>
-                        <Link href={href}>{link}</Link> {/* Use 'href' from the array */}
+                        <Link href={href}>{link}</Link>
                     </li>
                 ))}
             </ul>

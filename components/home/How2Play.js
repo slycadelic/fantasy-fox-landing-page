@@ -18,6 +18,7 @@ const How2Play = () => {
                     <span>Step 1</span>
                     <p>Select League Format</p>
                     <p>Select a pre-defined format (Soft, Medium, Hard) or customize and create your own custom league.</p>
+                    {/* League Tyre x3 */}
                 </div>
                 <div>
                     <span>Step 2</span>
@@ -28,6 +29,7 @@ const How2Play = () => {
                     <span>Step 3</span>
                     <p>Create New Team</p>
                     <p>Select drivers and a team principal based on the league selection system.</p>
+                    {/* Driver Helmet x3 */}
                 </div>
                 <div>
                     <span>Step 4</span>
