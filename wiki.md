@@ -1,4 +1,4 @@
-### How to Import the Svg in Next JS using SVGR 
+## How to Import the Svg in Next JS using SVGR 
 
 1. SVGR (https://react-svgr.com/playground/) is a third-party package for converting an SVG image to a React component.
 

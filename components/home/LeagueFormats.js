@@ -8,7 +8,7 @@ const How2Play = () => {
                 <h2>League Formats</h2>
                 <div className={styles.steps}>
                     <div className={styles.scrollContainer}>
-                        <div className={styles.step}>
+                        <div className={styles.step} >
                             <h3>Step 1</h3>
                             <p>Description of step 1</p>
                         </div>

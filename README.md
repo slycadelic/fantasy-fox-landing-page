@@ -21,6 +21,8 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 + https://www.f1fantasytracker.com/
 + https://racingnews365.com/
 + https://css-tricks.com/practical-css-scroll-snapping/
++ https://flickity.metafizzy.co/api
++ https://lo-victoria.com/a-look-at-react-hooks-useref-to-scroll-to-an-element
 
 ## Color Scheme:
 - Dark Void          #151419     rgb(21,20,25)
