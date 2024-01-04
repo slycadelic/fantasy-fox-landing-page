@@ -24,24 +24,24 @@ const LeagueFormat = () => {
             <h2>League Formats</h2>
             <nav>
                 <ul className={styles.nav}>
-                    <li className={styles.li}>
-                        <button onClick={() => scrollToElement(step1Ref.current)} className={styles.btn}> <span className='text-[rgb(255,53,53)] '>Soft</span>
+                    <li className={styles.soft}>
+                        <button onClick={() => scrollToElement(step1Ref.current)} className={styles.btn}> <span className='text-[color:var(--softFormat)]'>Soft</span>
                         </button>
                     </li>
                     <li className={styles.li}>
-                        <button onClick={() => scrollToElement(step2Ref.current)} className={styles.btn}><span className='text-[rgb(255,255,0)]'>Medium</span>
+                        <button onClick={() => scrollToElement(step2Ref.current)} className={styles.btn}><span className='text-[color:var(--mediumFormat)]'>Medium</span>
                         </button>
                     </li>
                     <li className={styles.li}>
-                        <button onClick={() => scrollToElement(step3Ref.current)} className={styles.btn}><span className='text-[rgb(205,205,205)]'>Hard</span>
+                        <button onClick={() => scrollToElement(step3Ref.current)} className={styles.btn}><span className='text-[color:var(--hardFormat)]'>Hard</span>
                         </button>
                     </li>
                     <li className={styles.li}>
-                        <button onClick={() => scrollToElement(step4Ref.current)} className={styles.btn}><span className='text-[rgb(49,145,255)]'>Custom</span>
+                        <button onClick={() => scrollToElement(step4Ref.current)} className={styles.btn}><span className='text-[color:var(--customFormat)]'>Custom</span>
                         </button>
                     </li>
                     <li className={styles.li}>
-                        <button onClick={() => scrollToElement(step5Ref.current)} className={styles.btn}><span className='text-[rgb(255,100,0)]'>Contest</span>
+                        <button onClick={() => scrollToElement(step5Ref.current)} className={styles.btn}><span className='text-[color:var(--contestFormat)]'>Contest</span>
                         </button>
                     </li>
                 </ul>
