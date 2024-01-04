@@ -9,3 +9,7 @@ npm install --save-dev @svgr/webpack
 
 # Yarn 
 yarn add --dev @svgr/webpack
+
+## How to Add Dynamic background to Navbar.
+
+## How to use scrollIntoView for horizontal navigation in a component

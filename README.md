@@ -15,6 +15,7 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 *** Do Not Edit ***
 
 ## Reference Links
++ https://www.fantasyfox.app/
 + https://gridrival.com/
 + https://www.motorsportgaminghub.com/
 + https://fantasy.formula1.com/en/
