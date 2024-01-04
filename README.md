@@ -31,6 +31,17 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 - Slate Grey         #262626     rgb(38,38,38)
 - Dusty Grey         #878787     rgb(135,135,135)
 - Snow               #FBFBFB     rgb(251,251,251)
+- Soft                           rgb(255, 53, 53) 
+
+//TODO: Add other colors similarly using code below.
+const FormatColors = {
+    Soft: 'rgb(255, 53, 53)',
+    Medium: 'rgb(255,255,0)',
+    Hard: 'rgb(205, 205, 205)',
+    Custom: 'rgb(49, 145, 255)',
+    Contest: 'rgb(255, 100, 0)',
+}
+
 **Use Contrasting font color for each background.**
 - used (https://csshero.org/mesher/) for generating background. 
 
