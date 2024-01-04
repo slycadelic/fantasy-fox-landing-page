@@ -21,6 +21,10 @@
     --contestFormat: ;
 }
 
+.rotateTyre {
+    background-color: red;
+}
+
 h3
 {
     font-family: 'Yantramanav', sans-serif;
