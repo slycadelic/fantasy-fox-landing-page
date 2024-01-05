@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@400;700&display=swap');
-
 :root
 {
     --darkVoid: rgb(21, 20, 25);
@@ -15,24 +13,29 @@
     --snow: rgb(251, 251, 251);
     --snowPale: rgba(255, 255, 255, 0.9);
     --softFormat: rgb(255, 53, 53);
-    --mediumFormat: rgb(255,255,0) ;
-    --hardFormat: rgb(205, 205, 205) ;
+    --mediumFormat: rgb(255, 255, 0);
+    --hardFormat: rgb(205, 205, 205);
     --customFormat: rgb(49, 145, 255);
     --contestFormat: rgb(255, 100, 0);
 }
 
-.rotateTyre {
+.rotateTyre
+{
     animation: rotation 1800ms infinite linear;
-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
 }
 
-@keyframes rotation {
-from {transform: rotate(0deg);}
-to   {transform: rotate(360deg);}
-}
-h3
+@keyframes rotation
 {
-    font-family: 'Yantramanav', sans-serif;
+    from
+    {
+        transform: rotate(0deg);
+    }
+
+    to
+    {
+        transform: rotate(360deg);
+    }
 }
 
 .layoutBG

@@ -1,9 +1,9 @@
-import  FantasyFoxsvg  from './FantasyFoxsvg.js';
+import FantasyFoxsvg from './FantasyFoxsvg.js';
 import Helmetsvg from './Helmetsvg.js';
 import styles from './How2Play.module.css';
 import React from 'react';
 
-const How2Play = ( props) => {
+const How2Play = (props) => {
 
     // TODO: 
     // Add fonts to heading p (second child) and text p (third child).
@@ -12,8 +12,6 @@ const How2Play = ( props) => {
     // Step2: League Icon and league table pic.
     // Step3: Driver helmet svg's and Race Car SVG.
     // Step4: Bonus Chip Pics and Race Flag Pic.
-
-   
 
     return (
         <div className={styles.howToPlay}>
@@ -24,12 +22,10 @@ const How2Play = ( props) => {
                     <p>Select League Format</p>
                     <p>Select a pre-defined format (Soft, Medium, Hard) or customize and create your own custom league.</p>
                     <div className={styles.tyres}>
-                    <FantasyFoxsvg   stroke='green'  />
-                    <FantasyFoxsvg   stroke='blue'  />
-                    <FantasyFoxsvg   stroke='yellow'  />
+                        <FantasyFoxsvg stroke='rgb(255, 53, 53)' className='rotateTyre' />
+                        <FantasyFoxsvg stroke='rgb(255, 255, 0)' className='rotateTyre' />
+                        <FantasyFoxsvg stroke='rgb(205, 205, 205)' className='rotateTyre' />
                     </div>
-                    
-                    {/* League Tyre x3 */}
                 </div>
                 <div>
                     <span>Step 2</span>
@@ -41,11 +37,10 @@ const How2Play = ( props) => {
                     <p>Create New Team</p>
                     <p>Select drivers and a team principal based on the league selection system.</p>
                     {/* Driver Helmet x3 */}
-                    <div className={styles.helmets}>
-                    <Helmetsvg />
-                    <Helmetsvg />
-                    <Helmetsvg />
-
+                    <div className={styles.tyres}>
+                        <Helmetsvg color1={'red'} color2={'blue'} />
+                        <Helmetsvg color1={'orange'} color2={'green'}/>
+                        <Helmetsvg color1={'grey'} color2={'black'} />
                     </div>
                 </div>
                 <div>
