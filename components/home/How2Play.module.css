@@ -3,6 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@400;700&display=swap');
 /* font-family: 'Yantramanav', sans-serif; */
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Rubik+Doodle+Shadow&display=swap');
+
 /* How to Play Styling  */
 .howToPlay
 {
@@ -53,7 +55,10 @@
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     position: relative;
+    font-family: 'Poppins', sans-serif;
 }
+
+
 
 .steps>div>span:first-child
 {

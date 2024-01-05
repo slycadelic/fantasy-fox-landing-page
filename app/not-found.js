@@ -3,7 +3,7 @@ import styles from './home.module.css';
  
 export default function NotFound() {
   return (
-    <div>
+    <div className={styles.notFound}>
       <h2>Not Found</h2>
       <p>Could not find requested resource</p>
       <Link href="/">Return Home</Link>

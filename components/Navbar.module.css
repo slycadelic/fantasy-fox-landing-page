@@ -23,6 +23,9 @@
     justify-content: space-around;
     align-items: center;
 }
+/* .activeLink{
+    text-decoration: underline;
+} */
 
 .mobileNavIcon
 {
