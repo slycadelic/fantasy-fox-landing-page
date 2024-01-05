@@ -5,7 +5,7 @@
 {
     width: 100%;
     padding: 20px;
-    background-color: var(--snowPale);
+    background-color: var(--gluonGrey);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,57 +17,87 @@
     /* Adjust the heading size */
     margin-bottom: 25px;
     font-weight: 800;
+    color: white;
 }
 
-.nav{
+.nav
+{
     display: flex;
-    gap: 20px;
-    justify-content: center;
-    list-style-type: none;
-}
-
-
-.btn {
-    text-decoration: none;
-    border: none;
-    background: none;
-    cursor: pointer;
-    outline: none;
+    flex-flow: column nowrap;
     position: relative;
 }
 
+.nav>div
+{
+    display: inline-flex;
+    gap: 20px;
+    justify-content: center;
+}
 
-.btn::after {
+.nav>div>div
+{
+    width: 100px;
+    text-align: center;
+}
+
+.nav>span
+{
+    position: absolute;
+    bottom: -2px;
+    width: 100px;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.281);
+}
+
+.btn
+{
+    cursor: pointer;
+    position: relative;
+    width: 100px;
+}
+
+
+.btn::after
+{
     content: '';
     position: absolute;
     bottom: -2px;
     left: 0;
     width: 0;
     height: 2px;
-    background-color: blue; /* Adjust this color as needed */
-    transition: width 0.3s ease-in-out; /* Transition for underline width */
+    background-color: rgb(255, 255, 255);
+    transition: width 0.3s ease-in-out;
+    -webkit-transition: width 0.3s ease-in-out;
+    -moz-transition: width 0.3s ease-in-out;
+    -ms-transition: width 0.3s ease-in-out;
+    -o-transition: width 0.3s ease-in-out;
 }
 
-.btn:hover::after,
-.active::after {
-    width: 100%; /* Full underline on hover and active */
+.activeLinkLine {
+    transition: left 0.3s ease-in-out;
+    -webkit-transition: left 0.3s ease-in-out;
+    -moz-transition: left 0.3s ease-in-out;
+    -ms-transition: left 0.3s ease-in-out;
+    -o-transition: left 0.3s ease-in-out;
 }
 
+.btn:hover::after
+{
+    width: 100%;
+}
 
-
-
- .btn{
+.btn
+{
     cursor: pointer;
-        font-size: 14px;
-        font-weight: 500;
-        line-height: normal;
-        padding: 7px 15px;
-        border-radius: 4px;
-        display: inline-block;
-        text-align: center;
-        white-space: nowrap;
-    
-    }
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+    padding: 7px 15px;
+    border-radius: 4px;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+}
 
 .steps
 {
@@ -82,7 +112,8 @@
 }
 
 
-.scrollContainer {
+.scrollContainer
+{
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -90,8 +121,7 @@
     overflow: auto;
     scroll-snap-type: x mandatory;
     width: 100%;
- height: 150px;
-  }
+}
 
 .step
 {
@@ -103,8 +133,10 @@
     scroll-snap-align: center;
     scroll-snap-stop: always;
     /* Your existing styles for individual steps */
-    width: 100%; /* Adjust width as needed */
-    margin-right: 10px; /* Adjust margin between steps */
+    width: 100%;
+    /* Adjust width as needed */
+    margin-right: 10px;
+    /* Adjust margin between steps */
     padding: 15px;
     margin-bottom: 20px;
     background-color: #ffffff;
@@ -114,11 +146,13 @@
     /* Add a subtle shadow */
 }
 
-.step > h3 {
+.step>h3
+{
     text-align: center;
     font-size: larger;
     font-weight: 900;
 }
+
 /* .stepIcon
 {
     width: 50px;

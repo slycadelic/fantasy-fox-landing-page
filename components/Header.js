@@ -12,18 +12,11 @@ import useWindowScroll from "@/hooks/useWindowScroll";
 
 const Header = () => {
     const [nav, setNav] = useState(false);
-    const [activeLink, setActiveLink] = useState(null);
     const router = useRouter();
-
     const scrollY = useWindowScroll();
     const backgroundColor = `rgba(0,0,0,${scrollY / 1000})`;
     let pathname = usePathname() || '/';
 
-    if (pathname.includes("/Contact/")) {
-        pathname = "/Contact";
-    }
-
-    const [hoveredPath, setHoveredPath] = useState(pathname);
     const links = [
         {
             id: 1,
@@ -47,6 +40,13 @@ const Header = () => {
         },
     ];
 
+    if (pathname.includes("/Contact/")) {
+        pathname = "/Contact";
+    }
+    const [activeLink, setActiveLink] = useState(links.find(link => link.href === pathname)?.id);
+
+    // const [hoveredPath, setHoveredPath] = useState(pathname);
+
     const handleLinkClick = (id, href) => {
         setActiveLink(id);
         setNav(false);
@@ -55,7 +55,7 @@ const Header = () => {
 
     return (
         <div className={styles.header} style={{ backgroundColor }}>
-            <Link href='/'>
+            <Link href='/' onClick={() => handleLinkClick(1, '/')}>
                 <Image
                     src={Title}
                     alt='logo'
@@ -73,7 +73,7 @@ const Header = () => {
                                 whileTap={{ scale: 0.9 }} // Scale down on click
                                 onClick={() => handleLinkClick(id, href)}
                                 initial={{ borderBottom: "2px solid transparent" }} // Initial state of underline
-                                animate={{ borderBottom: activeLink === id ? "2px solid blue" : "2px solid transparent" }} // Animate underline
+                                animate={{ borderBottom: activeLink === id ? "2px solid white" : "2px solid transparent" }} // Animate underline
                             >
                                 {link}
                             </motion.div>
