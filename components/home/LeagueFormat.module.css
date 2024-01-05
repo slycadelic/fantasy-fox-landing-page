@@ -23,8 +23,35 @@
     display: flex;
     gap: 20px;
     justify-content: center;
+    list-style-type: none;
 }
 
+
+.btn {
+    text-decoration: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+}
+
+
+.btn::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: blue; /* Adjust this color as needed */
+    transition: width 0.3s ease-in-out; /* Transition for underline width */
+}
+
+.btn:hover::after,
+.active::after {
+    width: 100%; /* Full underline on hover and active */
+}
 
 
 

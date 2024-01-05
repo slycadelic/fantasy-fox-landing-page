@@ -17,11 +17,13 @@ const Header = () => {
 
     const scrollY = useWindowScroll();
     const backgroundColor = `rgba(0,0,0,${scrollY / 1000})`;
-    
+    let pathname = usePathname() || '/';
 
-    
- 
- 
+    if (pathname.includes("/Contact/")) {
+        pathname = "/Contact";
+    }
+
+    const [hoveredPath, setHoveredPath] = useState(pathname);
     const links = [
         {
             id: 1,
@@ -66,19 +68,12 @@ const Header = () => {
                     <li key={id}>
                         <Link href={href}>
                             <motion.div
-                                className={activeLink === id ? styles.activeLink : ""}
-                                whileHover={{ scale: 1.1, color: 'rgb(126,125,124)' }} // Zinc color 
+                                className={styles.navLink}
+                                whileHover={{ scale: 1.1, color: 'rgb(126,125,124)' }} // Scale up and change color on hover
                                 whileTap={{ scale: 0.9 }} // Scale down on click
                                 onClick={() => handleLinkClick(id, href)}
                                 initial={{ borderBottom: "2px solid transparent" }} // Initial state of underline
                                 animate={{ borderBottom: activeLink === id ? "2px solid blue" : "2px solid transparent" }} // Animate underline
-                                transition={{
-                                    type: "spring",
-                                    bounce: 0.25,
-                                    stiffness: 130,
-                                    damping: 9,
-                                    duration: 0.3,
-                                  }}
                             >
                                 {link}
                             </motion.div>
@@ -96,7 +91,7 @@ const Header = () => {
                         <li key={id}>
                             <Link href={href}>
                                 <motion.a
-                                    className={activeLink === id ? styles.activeLink : ""}
+                                    className={styles.navLink}
                                     whileTap={{ scale: 0.9 }} // Scale down on click
                                     onClick={() => handleLinkClick(id, href)}
                                 >

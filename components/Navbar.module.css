@@ -27,6 +27,27 @@
     text-decoration: underline;
 } */
 
+
+.navLink {
+    text-decoration: none;
+    position: relative;
+}
+
+.navLink::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: blue; /* Adjust this color as needed */
+    transition: width 0.3s ease-in-out; /* Transition for underline width */
+}
+
+.navLink:hover::after,
+.navLink.active::after {
+    width: 100%; /* Full underline on hover and active */
+}
 .mobileNavIcon
 {
     display: none;
