@@ -5,6 +5,7 @@ const FantasyFoxsvg = ({ stroke} ) => {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       id="test1"
+      className="rotateTyre"
       shapeRendering="geometricPrecision"
       textRendering="geometricPrecision"
       viewBox="0 0 300 300"

@@ -69,7 +69,10 @@
 .tyres{
     display: flex;
     justify-content: center;
+  
+    
 }
+
 
 .helmets{
     display: flex;
