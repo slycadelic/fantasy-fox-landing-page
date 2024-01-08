@@ -1,6 +1,7 @@
 /* League Formats Styling   */
 
 
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap');
 .LeagueFormat
 {
     width: 100%;
@@ -32,12 +33,15 @@
     display: inline-flex;
     gap: 20px;
     justify-content: center;
+
+    
 }
 
 .nav>div>div
 {
     width: 100px;
     text-align: center;
+    
 }
 
 .nav>span
@@ -139,10 +143,19 @@
     /* Adjust margin between steps */
     padding: 15px;
     margin-bottom: 20px;
-    background-color: #ffffff;
+    font-family: 'Playfair Display', serif;
     /* Step background color */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    background-color:hsla(359,0%,14%,1);
+background-image:
+radial-gradient(at 40% 20%, hsla(246,100%,74%,1) 0px, transparent 50%),
+radial-gradient(at 24% 28%, hsla(47,100%,56%,1) 0px, transparent 50%),
+radial-gradient(at 90% 81%, hsla(213,100%,93%,1) 0px, transparent 50%),
+radial-gradient(at 79% 25%, hsla(198,100%,76%,1) 0px, transparent 50%),
+radial-gradient(at 7% 83%, hsla(240,100%,77%,1) 0px, transparent 50%),
+radial-gradient(at 47% 15%, hsla(100,100%,70%,1) 0px, transparent 50%)
     /* Add a subtle shadow */
 }
 
