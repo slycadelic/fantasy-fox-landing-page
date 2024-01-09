@@ -52,3 +52,5 @@ yarn add --dev @svgr/webpack
 - We can adjust different parameters like behavior, inline and block according to the Scrolling behavior.
 - For Triggering the Scrolling behavior we have to pass an onClick function to all the buttons where we want the Horizontal Effect.
 - Finally we have to pass the Reference in every div element so that they can hold the information when the scrolling occurs.
+
+## Formik for Contact Page

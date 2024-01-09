@@ -3,6 +3,9 @@
 import React from 'react';
 import { useFormik } from 'formik';
 import styles from './Contact.module.css';
+import { Kelly_Slab } from 'next/font/google';
+
+const kelly = Kelly_Slab({ subsets: ['latin'], weight: '400' });
 
 const page = () => {
 
@@ -20,37 +23,41 @@ const page = () => {
     return (
         <div className='mainContainer' style={{ backgroundImage: "url('Banner.jpg')" }}>
             <div className={styles.contactForm}>
-                <div className={styles.form}>
-                    <form onSubmit={formik.handleSubmit}>
-                        <label htmlFor='firstName'>Name</label>
-                        <input
-                            className={styles.contactInput}
-                            id='firstName'
-                            name='fullName'
-                            type='text'
-                            onChange={formik.handleChange}
-                            value={formik.values.fullName}
-                        />
-                        <label htmlFor='email'>Email</label>
-                        <input
-                            className={styles.contactInput}
-                            id='email'
-                            name='email'
-                            type='email'
-                            onChange={formik.handleChange}
-                            value={formik.values.email}
-                            required
-                        />
-                        <label htmlFor='message'>Message</label>
-                        <input
-                            className={styles.contactInput}
-                            id='message'
-                            name='message'
-                            type='text'
-                            onChange={formik.handleChange}
-                            value={formik.values.message}
-                        />
-                        <button type='submit' className={styles.contactSubmit}>
+                <div className={styles.formBox}>
+                    <form onSubmit={formik.handleSubmit} className={styles.form}>
+                        <span className={kelly.className}>Contact Us</span>
+                        <div>
+                            <span>Name</span>
+                            <input
+                                name='fullName'
+                                type='text'
+                                onChange={formik.handleChange}
+                                value={formik.values.fullName}
+                            />
+                        </div>
+                        <div>
+                            <span>Email</span>
+                            <input
+                                id='email'
+                                name='email'
+                                type='email'
+                                onChange={formik.handleChange}
+                                value={formik.values.email}
+                                required
+                            />
+                        </div>
+                        <div>
+                            <span>Message</span>
+                            <textarea
+                                className={styles.contactInput}
+                                id='message'
+                                name='message'
+                                type='text'
+                                onChange={formik.handleChange}
+                                value={formik.values.message}
+                            />
+                        </div>
+                        <button type='submit'>
                             Submit
                         </button>
                     </form>
