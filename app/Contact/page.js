@@ -4,7 +4,6 @@ import React from 'react';
 import { useFormik } from 'formik';
 import styles from './Contact.module.css';
 import { Kelly_Slab } from 'next/font/google';
-
 const kelly = Kelly_Slab({ subsets: ['latin'], weight: '400' });
 
 const page = () => {

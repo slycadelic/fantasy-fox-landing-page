@@ -2,7 +2,8 @@
 
 import styles from './LeagueFormat.module.css';
 import { useRef, useState, useEffect } from 'react';
-// import { useRouter } from 'next/navigation';
+import { Kelly_Slab } from 'next/font/google';
+const kelly = Kelly_Slab({ subsets: ['latin'], weight: '400' });
 
 const LeagueFormat = () => {
     const step1Ref = useRef(null);

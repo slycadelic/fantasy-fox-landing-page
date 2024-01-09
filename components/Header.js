@@ -14,7 +14,7 @@ const Header = () => {
     const [nav, setNav] = useState(false);
     const router = useRouter();
     const scrollY = useWindowScroll();
-    const backgroundColor = `rgba(0,0,0,${scrollY / 1000})`;
+    const backgroundColor = `rgba(0,0,0,${scrollY / 500})`;
     let pathname = usePathname() || '/';
 
     const links = [
