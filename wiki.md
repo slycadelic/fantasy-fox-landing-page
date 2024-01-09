@@ -19,6 +19,7 @@ yarn add --dev @svgr/webpack
 
 ### How to Use useWindowScroll Hook?
 
+
 1. Initialization: Initializes state using the useState hook to hold the vertical scroll position (scrollY) with an initial value of 0.
 
 2. Event Listener on Window Scroll:
@@ -54,3 +55,25 @@ yarn add --dev @svgr/webpack
 - Finally we have to pass the Reference in every div element so that they can hold the information when the scrolling occurs.
 
 ## Formik for Contact Page
+
+- Formik is a small group of React components and hooks for building forms in React and React Native. It helps in mostly 
+1. Getting values in and ot of form state.
+2. Validation and error messages.
+3. Handling Form Submission.
+
+## Installation 
+
+#NPM
+- npm install formik --save
+
+or
+ yarn add formik
+
+
+
+## How to Use Formik to Create Forms 
+
+- We have to use the useFormik Hook provided by Formik and pass the initialValues like 'fullName', 'email', 'message' to the Hook and the Submission function(onSubmit) to the useFormik Hook and it returns the form state and helper methods(handleSubmit, handleChange) in a Variable called formik.
+
+- After that when the User Submits the Form the useFormik() returns the data provided by the user in JSON Format in alert form.
+

@@ -1,5 +1,6 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap'); */
 /* /* font-family: 'Kelly Slab', sans-serif; */
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Roboto+Slab:wght@500&family=Ubuntu&display=swap');
 
 .contactForm
 {
@@ -11,6 +12,9 @@
     border-radius: 10px;
     overflow: hidden;
     margin: 10px;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .formBox
