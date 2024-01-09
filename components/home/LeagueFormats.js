@@ -16,8 +16,6 @@ const LeagueFormat = () => {
 
     const [left, setLeft] = useState((activeLink - 1) * 120);
 
-    // const router = useRouter();
-
     const scrollToElement = (ref, id) => {
         setActiveLink(id);
         ref.current.scrollIntoView({
@@ -32,14 +30,13 @@ const LeagueFormat = () => {
             let left = divRef.current.scrollLeft;
             let width = divRef.current.scrollWidth;
             let num = Math.round((left * 5 / width) + 1);
-            console.log(num);
             setActiveLink(num);
             setLeft((num - 1) * 120);
         };
         divRef.current.addEventListener("scroll", handleScroll, { passive: true });
 
         return () => {
-            divRef.current.removeEventListener("scroll", handleScroll, { passive: true });
+            divRef.current?.removeEventListener("scroll", handleScroll, { passive: true });
         };
     }, []);
 
@@ -48,7 +45,7 @@ const LeagueFormat = () => {
             <h2>League Formats</h2>
             <div className={styles.nav}>
                 <div>
-                    <div>
+                    <div className={activeLink === 1 ? styles.btnActiveLink : undefined}>
                         <button
                             onClick={() => scrollToElement(step1Ref, 1)}
                             className={styles.btn}
@@ -56,7 +53,7 @@ const LeagueFormat = () => {
                             <span className='text-[color:var(--softFormat)]'>Soft</span>
                         </button>
                     </div>
-                    <div>
+                    <div className={activeLink === 2 ? styles.btnActiveLink : undefined}>
                         <button
                             onClick={() => scrollToElement(step2Ref, 2)}
                             className={styles.btn}
@@ -64,7 +61,7 @@ const LeagueFormat = () => {
                             <span className='text-[color:var(--mediumFormat)]'>Medium</span>
                         </button>
                     </div>
-                    <div>
+                    <div className={activeLink === 3 ? styles.btnActiveLink : undefined}>
                         <button
                             onClick={() => scrollToElement(step3Ref, 3)}
                             className={styles.btn}
@@ -72,7 +69,7 @@ const LeagueFormat = () => {
                             <span className='text-[color:var(--hardFormat)]'>Hard</span>
                         </button>
                     </div>
-                    <div>
+                    <div className={activeLink === 4 ? styles.btnActiveLink : undefined}>
                         <button
                             onClick={() => scrollToElement(step4Ref, 4)}
                             className={styles.btn}
@@ -80,7 +77,7 @@ const LeagueFormat = () => {
                             <span className='text-[color:var(--customFormat)]'>Custom</span>
                         </button>
                     </div>
-                    <div>
+                    <div className={activeLink === 5 ? styles.btnActiveLink : undefined}>
                         <button
                             onClick={() => scrollToElement(step5Ref, 5)}
                             className={styles.btn}
@@ -89,7 +86,7 @@ const LeagueFormat = () => {
                         </button>
                     </div>
                 </div>
-                <span className={styles.activeLinkLine} style={{ left: `${left}px` }} />
+                <span style={{ left: `${left}px` }} />
             </div>
             <div className={styles.steps}>
                 <div className={styles.scrollContainer} ref={divRef}>
