@@ -49,10 +49,65 @@
         radial-gradient(at 0% 100%, hsla(16, 68%, 20%, 1) 0px, transparent 50%);
 }
 
-.mainContainer
-{
+/* Basic styling for the Contact */
+.mainContainer {
+    background-size: cover;
+    background-position: center;
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    padding-top: 60px;
+    align-items: center;
+  }
+  
+  .contactForm {
+    max-width: 600px; /* Adjust max-width as needed */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7); /* Example background color for content */
+    border-radius: 10px;
+  }
+  
+  .heading {
+    text-align: center;
+    padding: 20px;
+    height: 150px;
+    
+  }
+
+  .heading>h1,
+  .heading>p {
+    color: azure;
+    margin-top: 15px;
+    justify-content: center;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+
+  input[type='text'],
+input[type='email'],
+input[type='tel'] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
+
+button[type='submit'] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff; /* Example button color */
+  color: white;
+  cursor: pointer;
+}
+  
+  
+  
