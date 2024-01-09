@@ -2,71 +2,62 @@
 
 import React from 'react';
 import { useFormik } from 'formik';
+import styles from './Contact.module.css';
 
 const page = () => {
-  const formik = useFormik({
-    initialValues: {
-      firstName: '',
-      email: '',
-      phone: '',
-      message: '', // Changed to lowercase for consistency
-    },
-    onSubmit: values => {
-      alert(JSON.stringify(values, null, 2));
-    },
-  });
 
-  return (
-    <div className='mainContainer' style={{ backgroundImage: "url('Banner.jpg')" }}>
-      <div className='contactForm'>
-        <div className='heading' style={{ backgroundImage: "url('Programming.jpg')",
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: 'cover',
-    width: '100'
-    }}>
-          <h1>Contact Us</h1>
-          <p>Feel free to drop us a Message Below</p>
+    const formik = useFormik({
+        initialValues: {
+            fullName: '',
+            email: '',
+            message: '', // Changed to lowercase for consistency
+        },
+        onSubmit: values => {
+            alert(JSON.stringify(values, null, 2));
+        },
+    });
+
+    return (
+        <div className='mainContainer' style={{ backgroundImage: "url('Banner.jpg')" }}>
+            <div className={styles.contactForm}>
+                <div className={styles.form}>
+                    <form onSubmit={formik.handleSubmit}>
+                        <label htmlFor='firstName'>Name</label>
+                        <input
+                            className={styles.contactInput}
+                            id='firstName'
+                            name='fullName'
+                            type='text'
+                            onChange={formik.handleChange}
+                            value={formik.values.fullName}
+                        />
+                        <label htmlFor='email'>Email</label>
+                        <input
+                            className={styles.contactInput}
+                            id='email'
+                            name='email'
+                            type='email'
+                            onChange={formik.handleChange}
+                            value={formik.values.email}
+                            required
+                        />
+                        <label htmlFor='message'>Message</label>
+                        <input
+                            className={styles.contactInput}
+                            id='message'
+                            name='message'
+                            type='text'
+                            onChange={formik.handleChange}
+                            value={formik.values.message}
+                        />
+                        <button type='submit' className={styles.contactSubmit}>
+                            Submit
+                        </button>
+                    </form>
+                </div>
+            </div>
         </div>
-        <div className='form'>
-          <form onSubmit={formik.handleSubmit}>
-            <label htmlFor='firstName'>First Name</label>
-            <input
-              id='firstName'
-              name='firstName'
-              type='text'
-              onChange={formik.handleChange}
-              value={formik.values.firstName}
-            />
-            <label htmlFor='email'>Email Address</label>
-            <input
-              id='email'
-              name='email'
-              type='email'
-              onChange={formik.handleChange}
-              value={formik.values.email}
-            />
-            <label htmlFor='phone'>Phone</label>
-            <input
-              id='phone'
-              name='phone'
-              type='tel'
-              onChange={formik.handleChange}
-              value={formik.values.phone}
-            />
-            <label htmlFor='message'>Message</label>
-            <input
-              id='message'
-              name='message'
-              type='text'
-              onChange={formik.handleChange}
-              value={formik.values.message}
-            />
-            <button type='submit'>Submit</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  );
+    );
 };
 
 export default page;

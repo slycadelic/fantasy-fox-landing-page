@@ -5,45 +5,56 @@
     width: 100%;
 }
 
-.notFound {
+.notFound
+{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
     font-family: Arial, sans-serif;
-  }
-  
-  .imageWrapper {
+}
+
+.imageWrapper
+{
     width: 100%;
-    max-width: 600px; /* Adjust maximum width as needed */
-    margin: 20px auto; /* Center the image */
-  }
-  
-  .button {
+    max-width: 600px;
+    /* Adjust maximum width as needed */
+    margin: 20px auto;
+    /* Center the image */
+}
+
+.button
+{
     display: block;
     width: fit-content;
     padding: 10px 20px;
     margin: 20px auto;
     text-decoration: none;
     color: #ffffff;
-    background-color: #007bff; /* Adjust button color */
+    background-color: #007bff;
+    /* Adjust button color */
     border-radius: 5px;
     text-align: center;
     transition: background-color 0.3s ease;
-  }
-  
-  .button:hover {
-    background-color: #0056b3; /* Adjust hover color */
-  }
-  
-  /* Additional styles for text responsiveness */
-  .notFound h2 {
-    font-size: 2em; /* Adjust heading font size */
+}
+
+.button:hover
+{
+    background-color: #0056b3;
+    /* Adjust hover color */
+}
+
+/* Additional styles for text responsiveness */
+.notFound h2
+{
+    font-size: 2em;
+    /* Adjust heading font size */
     margin-bottom: 10px;
-  }
-  
-  .notFound p {
-    font-size: 1.2em; /* Adjust paragraph font size */
-  }
-  
+}
+
+.notFound p
+{
+    font-size: 1.2em;
+    /* Adjust paragraph font size */
+}
