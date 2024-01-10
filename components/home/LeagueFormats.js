@@ -45,9 +45,9 @@ const LeagueFormat = () => {
 
     return (
         <div className={styles.LeagueFormat}>
-            <h0 className={kelly.className}>
+            <h1 className={kelly.className}>
                 League Formats
-            </h0>
+            </h1>
             <div className={styles.nav}>
                 <div>
                     <div className={activeLink === 1 ? styles.btnActiveLink : undefined}>

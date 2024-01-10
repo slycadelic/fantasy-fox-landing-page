@@ -15,7 +15,7 @@
     align-items: center;
 }
 
-.LeagueFormat h0
+.LeagueFormat h1
 {
     color: white;
     font-size: 40px;
@@ -118,7 +118,6 @@
 
 .scrollContainer>div
 {
-    cursor: pointer;
     flex-shrink: 0;
     display: flex;
     flex-flow: column nowrap;
@@ -167,15 +166,18 @@
 }
 
 /* Media query for responsiveness */
+@media screen and (max-width: 800px)
+{
+    .nav>span
+    {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 600px)
 {
     .nav>div
     {
         gap: 10px;
-    }
-
-    .nav>span
-    {
-        display: none;
     }
 }

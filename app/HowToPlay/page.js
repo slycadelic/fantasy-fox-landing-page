@@ -3,7 +3,7 @@ import React from 'react'
 const page = () => {
     return (
         <div className='mainContainer'>
-            How To Play
+            Under Development
         </div>
     )
 }

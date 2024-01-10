@@ -4,10 +4,7 @@ import Image from 'next/image';
 import BannerTitle from '@/components/home/BannerTitle';
 import useWindowSize from "@/hooks/useWindowSize";
 import styles from './Banner.module.css';
-import PlayStore from '@/public/downloadApp2.png'
-import AppStore from '@/public/downloadApp3.png'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlay } from '@fortawesome/free-solid-svg-icons';
+import DownloadLinks from './DownloadLinks';
 
 const Banner = () => {
 
@@ -15,11 +12,9 @@ const Banner = () => {
 
     return (
         <div className={styles.divImage}>
-            {/* Logo */}
             <div className={styles.Logo} style={{ width: (size.width > 600) ? '350px' : '200px' }}>
                 <BannerTitle />
             </div>
-            {/* Main Image */}
             {(size.width > 600)
                 ? (
                     <Image
@@ -38,33 +33,7 @@ const Banner = () => {
                 )
             }
             <div className={styles.MainLinks}>
-                <a href="/web-app-link" className={styles.links}>
-                    <button className={styles.webApp}>
-                        <span>Play Now</span>
-                        <FontAwesomeIcon icon={faPlay} />
-                    </button>
-                </a>
-                <a href="/play-store-link" className={styles.links}>
-                    <button className={styles.playStore}>
-                        <Image
-                            src={PlayStore}
-                            alt={'Android App'}
-                            width={155}
-                            height={48}
-                            className={styles.linkImage}
-                        />
-                    </button>
-                </a>
-                <a href="/app-store-link" className={styles.links}>
-                    <button className={styles.appStore}>
-                        <Image
-                            src={AppStore}
-                            alt={'ios App'}
-                            width={155}
-                            height={48}
-                        />
-                    </button>
-                </a>
+                <DownloadLinks />
             </div>
         </div>
     )

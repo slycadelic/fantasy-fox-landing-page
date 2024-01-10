@@ -21,9 +21,9 @@ const How2Play = () => {
 
     return (
         <div className={styles.howToPlay}>
-            <span className={kelly.className}>
+            <h1 className={kelly.className}>
                 How to Play
-            </span>
+            </h1>
             <div className={styles.steps}>
                 <div className={crimsonPro.className}>
                     <h1>

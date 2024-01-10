@@ -1,141 +1,46 @@
 /* Footer Styling  */
-
 .footer
 {
-    padding: 5.875rem 2.8571rem;
-    background-color: var(--gluonGrey);
-    color: white;
-    justify-content: center;
-}
-
-.footerContent
-{
-    max-width: 1000px;
     width: 100%;
-    grid-row-gap: 2.1875rem;
-    flex-direction: column;
-    align-items: stretch;
-    margin-left: auto;
-    margin-right: auto;
     display: flex;
+    justify-content: center;
+    color: white;
 }
 
-.logo
+.footer>div
 {
+    width: 100%;
+    max-width: 1200px;
+    background-color: var(--gluonGrey);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 50px;
+}
+
+.row1
+{
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    height: 3.3rem;
-    grid-column-gap: 1.5rem;
     align-items: center;
+    padding: 10px;
 }
 
-.footnote
+.row1>div
 {
-    width: 91%;
-    font-family: Univiapro Book, sans-serif;
-    font-size: .875rem;
-    line-height: 1.3em;
-}
-
-.footerSubUnit
-{
-    justify-content: space-between;
-    display: flex;
-}
-
-
-.socialsContainer
-{
-
-    height: 3.3rem;
-    width: 10%;
-    grid-column-gap: 0.5rem;
+    display: inline-flex;
     align-items: center;
-    display: flex;
+    gap: 50px;
+    height: 50px;
 }
 
-.copyrightText
+.row2
 {
-    font-family: Univiapro, sans-serif;
-    font-size: .875rem;
-    font-weight: 500;
-    line-height: 1.3em;
+    width: 100%;
+    border: 1px solid red;
 }
-
-.menuContainer
-{
-    grid-row-gap: 0.5rem;
-    flex-direction: row;
-    align-items: flex-start;
-    grid-column-gap: 1.5rem;
-    display: flex;
-}
-
-
-
-
 
 /* Media query for mobile devices */
-
-
-
 @media screen and (max-width: 600px)
-{
-
-    .footer
-    {
-        padding-left: 3.025rem;
-        padding-right: 3.025rem;
-    }
-
-    .logo
-    {
-        grid-row-gap: 1rem;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .socials-container
-    {
-        height: 2.9rem;
-        margin-bottom: 10px;
-    }
-
-    .socials
-    {
-        width: 2rem;
-        height: auto;
-    }
-
-    .menuContainer
-    {
-        grid-row-gap: 0.5rem;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-}
-
-@media screen and (max-width: 991px)
-{
-
-    .footer
-    {
-        padding-left: 2.125rem;
-        padding-right: 2.125rem;
-    }
-
-    .footnote
-    {
-        width: 97%;
-        margin-top: 20px;
-
-    }
-
-    .footerSubUnit
-    {
-        grid-row-gap: 1.875rem;
-        flex-direction: column-reverse;
-        align-items: flex-start;
-    }
-
-}
+{}
