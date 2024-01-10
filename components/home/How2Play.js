@@ -3,27 +3,21 @@ import FantasyFoxsvg from './FantasyFoxsvg.js';
 import Helmetsvg from './Helmetsvg.js';
 import mobilePic from '../../public/mobileApp3.png';
 import boosterChip from '../../public/boosterChip.png';
-import wildcardChip from '../../public/wildcardChip.png';
+// import wildcardChip from '../../public/wildcardChip.png';
 import styles from './How2Play.module.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     faUsers, faUserPlus, faUsersRectangle,
-    faArrowRightArrowLeft, faTrophy
- } from '@fortawesome/free-solid-svg-icons';
+    faArrowRightArrowLeft, faTrophy,
+    faFlagCheckered
+} from '@fortawesome/free-solid-svg-icons';
 
 import { Kelly_Slab, Crimson_Pro } from 'next/font/google';
 const kelly = Kelly_Slab({ subsets: ['latin'], weight: '400' });
 const crimsonPro = Crimson_Pro({ subsets: ['latin'] });
 
-const How2Play = (props) => {
-
-    // TODO: 
-    // Add images under p and give styling (background color).
-    // Step1: League tyre svg's.
-    // Step2: League Icon and league table pic.
-    // Step3: Driver helmet svg's and Race Car SVG.
-    // Step4: Bonus Chip Pics and Race Flag Pic.
+const How2Play = () => {
 
     return (
         <div className={styles.howToPlay}>
@@ -77,7 +71,7 @@ const How2Play = (props) => {
                     <div>
                         <FontAwesomeIcon icon={faArrowRightArrowLeft} size={'xl'} color={'white'} />
                         <Image src={boosterChip} width={50} height={'auto'} alt='Booster Chip' />
-                        <Image src={wildcardChip} width={50} height={'auto'} alt='Wildcard Chip' />
+                        <FontAwesomeIcon icon={faFlagCheckered} size={'xl'} color={'white'} className={styles.flagIcon} />
                         <FontAwesomeIcon icon={faTrophy} size={'xl'} color={'gold'} />
                     </div>
                 </div>

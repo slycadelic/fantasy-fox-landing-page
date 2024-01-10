@@ -67,7 +67,7 @@
 {
     position: absolute;
     top: -30px;
-    height: 32px;
+    height: 30px;
     color: white;
     background-color: rgba(0, 0, 0, 0.596);
     padding: 0 15px;
@@ -76,7 +76,7 @@
     -moz-border-radius: 5px 5px 0 0;
     -ms-border-radius: 5px 5px 0 0;
     -o-border-radius: 5px 5px 0 0;
-    font-size: 22px;
+    font-size: 18px;
 }
 
 .steps>div>h2
@@ -109,6 +109,14 @@
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+}
+
+.flagIcon {
+    transform: rotateZ(20deg);
+    -webkit-transform: rotateZ(20deg);
+    -moz-transform: rotateZ(20deg);
+    -ms-transform: rotateZ(20deg);
+    -o-transform: rotateZ(20deg);
 }
 
 /* Media query for responsiveness */
