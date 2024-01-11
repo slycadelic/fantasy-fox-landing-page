@@ -1,0 +1,115 @@
+.divImage
+{
+    position: fixed;
+    top: 60px;
+    width: 1200px;
+    z-index: -1;
+    overflow: hidden;
+    border-radius: 2px 2px 0 0;
+    -webkit-border-radius: 2px 2px 0 0;
+    -moz-border-radius: 2px 2px 0 0;
+    -ms-border-radius: 2px 2px 0 0;
+    -o-border-radius: 2px 2px 0 0;
+}
+
+.Logo
+{
+    position: absolute;
+    top: 50px;
+    left: 0px;
+}
+
+.bannerTitleText
+{
+    fill: var(--gluonGrey);
+}
+
+.bannerTitleLogo
+{
+    transform-origin: 48% center;
+    animation: rotateTitleLogo 5s linear infinite alternate;
+    -webkit-animation: rotateTitleLogo 5s linear infinite alternate;
+}
+
+@keyframes rotateTitleLogo
+{
+
+    0%,
+    45%
+    {
+        fill: var(--gluonGrey);
+        transform: rotateY(0deg);
+        -webkit-transform: rotateY(0deg);
+        -moz-transform: rotateY(0deg);
+        -ms-transform: rotateY(0deg);
+        -o-transform: rotateY(0deg);
+    }
+
+    55%,
+    100%
+    {
+        fill: rgb(255, 40, 0);
+        transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        -ms-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+    }
+}
+
+/* Links CSS  */
+.MainLinks
+{
+    position: absolute;
+    top: 80%;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.links
+{
+    cursor: pointer;
+    height: 60px;
+}
+
+.links>button
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background-color: black;
+    color: var(--snow);
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    height: 52px;
+    max-height: 52px;
+    width: 155px;
+    font-size: 20px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    
+}
+
+@media screen and (max-width: 600px)
+{
+    .MainLinks
+    {
+        top: 50%;
+        flex-direction: column;
+        width: 200px;
+        height: 'auto';
+        justify-content: flex-start;
+    }
+}

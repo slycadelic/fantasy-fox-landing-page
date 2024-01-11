@@ -1,6 +1,7 @@
 'use client' // Error components must be Client Components
  
 import { useEffect } from 'react'
+import styles from './home.module.css'
  
 export default function Error({ error, reset }) {
   useEffect(() => {
@@ -9,7 +10,7 @@ export default function Error({ error, reset }) {
   }, [error])
  
   return (
-    <div>
+    <div className={styles.errorPage}>
       <h2>Something went wrong!</h2>
       <button
         onClick={

@@ -1,0 +1,158 @@
+/* How to Play Styling  */
+.howToPlay
+{
+    width: 100%;
+    margin-top: 660px;
+    margin-bottom: 300px;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.952);
+    background-image:
+        radial-gradient(at 0% 100%, hsla(335, 0%, 10%, 1) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, hsla(19, 100%, 30%, 0.14) 0px, transparent 50%),
+        radial-gradient(at 0% 0%, hsla(343, 100%, 50%, 0.14) 0px, transparent 50%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.howToPlay>h1
+{
+    color: white;
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+.mobilePic
+{
+    position: relative;
+    top: -10px;
+    z-index: 0;
+}
+
+.steps
+{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    gap: 20px;
+    align-items: center;
+    z-index: 1;
+}
+
+.steps>div
+{
+    flex: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 300px;
+    height: 300px;
+    padding: 5px;
+    color: black;
+    background-color: rgba(0, 0, 0, 0.596);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    position: relative;
+}
+
+.steps>div>h1
+{
+    position: absolute;
+    top: -30px;
+    height: 30px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.596);
+    padding: 0 15px;
+    border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -ms-border-radius: 5px 5px 0 0;
+    -o-border-radius: 5px 5px 0 0;
+    font-size: 18px;
+}
+
+.steps>div>h2
+{
+    color: white;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.steps>div>p
+{
+    color: white;
+    text-align: justify;
+    font-size: 18px;
+    padding: 0 10px;
+}
+
+.steps>div>div
+{
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.055);
+    padding: 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.flagIcon {
+    transform: rotateZ(20deg);
+    -webkit-transform: rotateZ(20deg);
+    -moz-transform: rotateZ(20deg);
+    -ms-transform: rotateZ(20deg);
+    -o-transform: rotateZ(20deg);
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 1200px)
+{
+    .steps
+    {
+        flex-flow: column nowrap;
+        align-items: flex-start;
+        gap: 0;
+    }
+
+    .steps>div
+    {
+        min-height: 300px;
+    }
+
+    .steps>div:nth-child(even)
+    {
+        align-self: flex-end;
+        position: relative;
+        top: -50px;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+
+    .steps
+    {
+        gap: 50px;
+    }
+
+    .steps>div
+    {
+        align-self: center !important;
+        top: 0px !important;
+    }
+}

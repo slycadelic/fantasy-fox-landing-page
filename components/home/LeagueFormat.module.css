@@ -1,0 +1,183 @@
+/* League Formats Styling   */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+.LeagueFormat
+{
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.952);
+    background-image:
+        radial-gradient(at 0% 100%, hsla(335, 0%, 10%, 1) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, hsla(19, 100%, 30%, 0.14) 0px, transparent 50%),
+        radial-gradient(at 0% 0%, hsla(343, 100%, 50%, 0.14) 0px, transparent 50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.LeagueFormat h1
+{
+    color: white;
+    font-size: 40px;
+    margin: 50px 0;
+}
+
+.nav
+{
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
+}
+
+.nav>div
+{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    max-width: 100%;
+}
+
+.nav>div>div
+{
+    width: 100px;
+}
+
+.nav>div>div:hover,
+.btnActiveLink
+{
+    border-bottom-width: 2px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+}
+
+.nav>span
+{
+    position: absolute;
+    bottom: -2px;
+    width: 100px;
+    height: 2px;
+    background-color: rgb(214, 214, 214);
+    transition: left 0.3s ease-in-out;
+    -webkit-transition: left 0.3s ease-in-out;
+    -moz-transition: left 0.3s ease-in-out;
+    -ms-transition: left 0.3s ease-in-out;
+    -o-transition: left 0.3s ease-in-out;
+}
+
+.btn
+{
+    width: 100px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+}
+
+.scrollContainer
+{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.scrollContainer::-webkit-scrollbar
+{
+    width: 10px;
+    height: 7px;
+}
+
+/* Track */
+.scrollContainer::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+/* Handle */
+.scrollContainer::-webkit-scrollbar-thumb
+{
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgb(255, 40, 0);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.scrollContainer::-webkit-scrollbar-thumb:window-inactive
+{
+    background: rgba(255, 0, 0, 0.4);
+}
+
+.scrollContainer>div
+{
+    flex-shrink: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    background-color: var(--gluonGreyPale);
+    width: 100%;
+    min-height: 100%;
+    padding: 10px;
+    font-family: 'Playfair Display', serif;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.scrollContainer>div>div
+{
+    display: inline-flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+}
+
+.scrollContainer>div>div>svg
+{
+    height: 100%;
+}
+
+.scrollContainer>div>div>span
+{
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+}
+
+.scrollContainer>div>p
+{
+    color: white;
+    font-size: 18px;
+    font-family: 'Playfair Display', serif;
+    text-align: justify;
+    padding: 5px;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 800px)
+{
+    .nav>span
+    {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    .nav>div
+    {
+        gap: 10px;
+    }
+}

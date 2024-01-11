@@ -1,0 +1,70 @@
+/* Footer Styling  */
+.footer
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.footer>div
+{
+    width: 100%;
+    max-width: 1200px;
+    background-color: var(--gluonGrey);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 20px 10px 5px 10px;
+}
+
+.socials
+{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15%;
+    height: 30px;
+}
+
+.socials svg
+{
+    font-size: 20px;
+}
+
+.row2
+{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.row2>div
+{
+    height: 110px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.row2>div span
+{
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 600px)
+{
+    .row2
+    {
+        justify-content: center;
+        gap: 50px;
+    }
+}
