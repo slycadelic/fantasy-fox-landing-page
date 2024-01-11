@@ -15,7 +15,7 @@
 .Logo
 {
     position: absolute;
-    top: 50px;
+    top: 0px;
     left: 0px;
 }
 
@@ -57,20 +57,7 @@
     }
 }
 
-/* Links CSS  */
-.MainLinks
-{
-    position: absolute;
-    top: 80%;
-    left: 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-    width: 100%;
-    padding: 0 20px;
-}
-
+/* Download Links */
 .links
 {
     cursor: pointer;
@@ -79,6 +66,7 @@
 
 .links>button
 {
+    cursor: pointer;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -94,22 +82,15 @@
     height: 52px;
     max-height: 52px;
     width: 155px;
-    font-size: 20px;
+    font-size: 24px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
-    
+    box-shadow: 0 0 10px 3px rgb(255, 60, 0), inset 1px -1px 2px 0px rgb(163, 163, 163);
 }
 
-@media screen and (max-width: 600px)
+.links svg
 {
-    .MainLinks
-    {
-        top: 50%;
-        flex-direction: column;
-        width: 200px;
-        height: 'auto';
-        justify-content: flex-start;
-    }
+    font-size: 24px;
 }

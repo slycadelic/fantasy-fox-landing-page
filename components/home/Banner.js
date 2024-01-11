@@ -33,7 +33,7 @@ const Banner = () => {
                 )
             }
             <div className={styles.MainLinks}>
-                <DownloadLinks />
+                
             </div>
         </div>
     )

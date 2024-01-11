@@ -4,6 +4,7 @@ import Helmetsvg from './Helmetsvg.js';
 import mobilePic from '../../public/mobileApp3.png';
 import boosterChip from '../../public/boosterChip.png';
 // import wildcardChip from '../../public/wildcardChip.png';
+import DownloadLinks from './DownloadLinks.js';
 import styles from './How2Play.module.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -21,6 +22,9 @@ const How2Play = () => {
 
     return (
         <div className={styles.howToPlay}>
+            <div className={styles.playLinks}>
+                <DownloadLinks />
+            </div>
             <h1 className={kelly.className}>
                 How to Play
             </h1>
