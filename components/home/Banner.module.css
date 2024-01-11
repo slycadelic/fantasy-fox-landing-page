@@ -79,7 +79,27 @@
 
 .links>button
 {
+    display: flex;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background-color: black;
+    color: var(--snow);
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    height: 52px;
+    max-height: 52px;
+    width: 155px;
+    font-size: 20px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    
 }
 
 @media screen and (max-width: 600px)
@@ -92,31 +112,4 @@
         height: 'auto';
         justify-content: flex-start;
     }
-}
-
-/* buttons styling  */
-.webApp
-{
-    background-color: black;
-    color: azure;
-    margin: 0;
-    padding: 0;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    height: 52px;
-    width: 155px;
-    font-size: 20px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
-    flex-direction: row;
-    align-items: center;
-    gap: 5px;
-}
-
-.webApp>span
-{
-    padding: 10px;
 }

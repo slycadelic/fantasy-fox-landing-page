@@ -9,13 +9,13 @@ const DownloadLinks = () => {
     return (
         <>
             <a href="/web-app-link" className={styles.links}>
-                <button className={styles.webApp}>
+                <button>
                     <span>Play Now</span>
-                    <FontAwesomeIcon icon={faPlay} />
+                    <FontAwesomeIcon icon={faPlay} size={'xl'} />
                 </button>
             </a>
             <a href="/play-store-link" className={styles.links}>
-                <button className={styles.playStore}>
+                <button>
                     <Image
                         src={PlayStore}
                         alt={'Android App'}
@@ -26,7 +26,7 @@ const DownloadLinks = () => {
                 </button>
             </a>
             <a href="/app-store-link" className={styles.links}>
-                <button className={styles.appStore}>
+                <button>
                     <Image
                         src={AppStore}
                         alt={'ios App'}
