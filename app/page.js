@@ -1,5 +1,3 @@
-'use client'
-
 import How2Play from '@/components/home/How2Play';
 import styles from './home.module.css';
 import LeagueFormats from '@/components/home/LeagueFormats'
