@@ -9,6 +9,7 @@ import Image from "next/image";
 import Title from '../public/Title.png';
 import styles from './Navbar.module.css';
 import useWindowScroll from "@/hooks/useWindowScroll";
+import useWindowSize from "@/hooks/useWindowSize";
 
 const Header = () => {
 
@@ -19,7 +20,8 @@ const Header = () => {
 
     // for header opacity animation
     const scrollY = useWindowScroll();
-    const backgroundColor = `rgba(0,0,0,${scrollY / 500})`;
+    const size = useWindowSize();
+    const backgroundColor = `rgba(0,0,0,${scrollY / (size.height * 0.5)})`;
 
     let pathname = usePathname() || '/';
 

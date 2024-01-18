@@ -26,12 +26,52 @@
     align-items: center;
     justify-content: center;
     gap: 15%;
-    height: 30px;
+    position: relative;
+    padding: 20px 5px;
 }
 
 .socials svg
 {
     font-size: 20px;
+    color: rgb(207, 207, 207);
+}
+
+.socials a
+{
+    padding: 20px;
+    background-color: var(--gluonGrey);
+    z-index: 1;
+}
+
+a.facebookLink>svg:hover
+{
+    color: rgb(0, 153, 255);
+}
+
+a.twitterLink>svg:hover
+{
+    color: rgb(0, 195, 255);
+}
+
+a.instagramLink>svg:hover
+{
+    color: rgb(255, 0, 149);
+}
+
+a.discordLink>svg:hover
+{
+    color: rgb(255, 255, 255);
+}
+
+.socials>span
+{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(61, 61, 61);
+    z-index: 0;
 }
 
 .row2
@@ -66,5 +106,10 @@
     {
         justify-content: center;
         gap: 50px;
+    }
+
+    .socials>span
+    {
+        display: none;
     }
 }

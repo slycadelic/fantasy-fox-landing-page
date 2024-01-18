@@ -4,7 +4,6 @@ import Image from 'next/image';
 import BannerTitle from '@/components/home/BannerTitle';
 import useWindowSize from "@/hooks/useWindowSize";
 import styles from './Banner.module.css';
-import DownloadLinks from './DownloadLinks';
 
 const Banner = () => {
 
@@ -15,7 +14,7 @@ const Banner = () => {
             <div className={styles.Logo} style={{ width: (size.width > 600) ? '350px' : '200px' }}>
                 <BannerTitle />
             </div>
-            {(size.width > 600)
+            {(size.width > 900)
                 ? (
                     <Image
                         src="/Banner.jpg"
@@ -32,9 +31,6 @@ const Banner = () => {
                     />
                 )
             }
-            <div className={styles.MainLinks}>
-                
-            </div>
         </div>
     )
 }

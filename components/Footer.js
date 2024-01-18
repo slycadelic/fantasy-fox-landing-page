@@ -11,18 +11,19 @@ const Footer = () => {
         <section className={styles.footer}>
             <div>
                 <div className={styles.socials}>
-                    <a href='https://www.facebook.com/groups/369119915816074' target='_blank'>
+                    <a href='https://www.facebook.com/groups/369119915816074' target='_blank' className={styles.facebookLink}>
                         <FontAwesomeIcon icon={faFacebook} />
                     </a>
-                    <a href='https://twitter.com/fantasyffox' target='_blank'>
+                    <a href='https://twitter.com/fantasyffox' target='_blank' className={styles.twitterLink}>
                         <FontAwesomeIcon icon={faTwitter} />
                     </a>
-                    <a target='_blank' href='https://www.instagram.com/fantasyfox_app?igsh=NTFvMGRhNWZtemk0&utm_source=qr'>
+                    <a target='_blank' href='https://www.instagram.com/fantasyfox_app?igsh=NTFvMGRhNWZtemk0&utm_source=qr' className={styles.instagramLink}>
                         <FontAwesomeIcon icon={faInstagram} />
                     </a>
-                    <a target='_blank' href='https://discord.gg/wHY3zVBa'>
+                    <a target='_blank' href='https://discord.gg/wHY3zVBa' className={styles.discordLink}>
                         <FontAwesomeIcon icon={faDiscord} />
                     </a>
+                    <span />
                 </div>
                 <div className={styles.row2}>
                     <div>
