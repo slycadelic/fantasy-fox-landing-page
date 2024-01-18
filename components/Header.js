@@ -2,50 +2,40 @@
 
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import React, { useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { FaBars, FaTimes } from "react-icons/fa";
 import Image from "next/image";
 import Title from '../public/Title.png';
 import styles from './Navbar.module.css';
 import useWindowScroll from "@/hooks/useWindowScroll";
+import useWindowSize from "@/hooks/useWindowSize";
 
 const Header = () => {
+
+    // for mobile
     const [nav, setNav] = useState(false);
+
     const router = useRouter();
+
+    // for header opacity animation
     const scrollY = useWindowScroll();
-    const backgroundColor = `rgba(0,0,0,${scrollY / 500})`;
+    const size = useWindowSize();
+    const backgroundColor = `rgba(0,0,0,${scrollY / (size.height * 0.5)})`;
+
     let pathname = usePathname() || '/';
 
     const links = [
-        {
-            id: 1,
-            link: "home",
-            href: '/'
-        },
-        {
-            id: 2,
-            link: "How To Play",
-            href: '/HowToPlay'
-        },
-        {
-            id: 3,
-            link: "F1 Standings",
-            href: '/F1Standing'
-        },
-        {
-            id: 4,
-            link: "Contact",
-            href: '/Contact'
-        },
+        { id: 1, link: "home", href: '/' },
+        { id: 2, link: "How To Play", href: '/HowToPlay' },
+        { id: 3, link: "F1 Standings", href: '/F1Standing' },
+        { id: 4, link: "Contact", href: '/Contact' },
     ];
 
-    if (pathname.includes("/Contact/")) {
-        pathname = "/Contact";
-    }
+    // if (pathname.includes("/Contact/")) {
+    //     pathname = "/Contact";
+    // }
     const [activeLink, setActiveLink] = useState(links.find(link => link.href === pathname)?.id);
-
-    // const [hoveredPath, setHoveredPath] = useState(pathname);
 
     const handleLinkClick = (id, href) => {
         setActiveLink(id);

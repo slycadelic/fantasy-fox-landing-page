@@ -1,19 +1,30 @@
 import Link from 'next/link';
-import styles from './home.module.css';
-import NotFoundImage from '@/public/404.jpg'; // Import your 404 image component or specify the image source directly
-import Image from 'next/image';
+import styles from './NotFound.module.css';
 
 export default function NotFound() {
     return (
-        <div className={styles.notFound}>
-            <h2>Not Found</h2>
-            <p>Could not find requested resource</p>
-            <div className={styles.imageWrapper}>
-                <Image src={NotFoundImage} alt="Not Found" width={600} height={400} />
-            </div> {/* Add your 404 image */}
-            <Link href="/">
-                <button className={styles.button}>Return Home</button>
-            </Link>
+        <div className='mainContainer'>
+            <div className={styles.notFound}>
+                <div className={styles.vh}>
+                    <div>
+                        <div className={styles.wrap}>
+                            <h1>Page Not Found</h1>
+                            <h2>The page you are looking for does not exist.</h2>
+                            <div>
+                                <button className={styles.button}>
+                                    <div className={styles.buttonInner}>
+                                        <div className={styles.buttonContent}>
+                                            <Link href="/">
+                                                <span>Return Home</span>
+                                            </Link>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }

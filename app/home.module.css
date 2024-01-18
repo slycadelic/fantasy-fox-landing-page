@@ -12,16 +12,13 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    font-family: Arial, sans-serif;
 }
 
 .imageWrapper
 {
     width: 100%;
     max-width: 600px;
-    /* Adjust maximum width as needed */
     margin: 20px auto;
-    /* Center the image */
 }
 
 .button

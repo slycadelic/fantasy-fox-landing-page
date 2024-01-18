@@ -5,25 +5,25 @@ import Title from '../public/Title.png';
 import Tech23Logo from '../public/Tech23Logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faInstagram, faDiscord } from '@fortawesome/free-brands-svg-icons';
-import DownloadLinks from './home/DownloadLinks';
 
 const Footer = () => {
     return (
         <section className={styles.footer}>
             <div>
                 <div className={styles.socials}>
-                    <a href='https://www.facebook.com/groups/369119915816074' target='_blank'>
+                    <a href='https://www.facebook.com/groups/369119915816074' target='_blank' className={styles.facebookLink}>
                         <FontAwesomeIcon icon={faFacebook} />
                     </a>
-                    <a href='https://twitter.com/fantasyffox' target='_blank'>
+                    <a href='https://twitter.com/fantasyffox' target='_blank' className={styles.twitterLink}>
                         <FontAwesomeIcon icon={faTwitter} />
                     </a>
-                    <a target='_blank' href='https://www.instagram.com/fantasyfox_app?igsh=NTFvMGRhNWZtemk0&utm_source=qr'>
+                    <a target='_blank' href='https://www.instagram.com/fantasyfox_app?igsh=NTFvMGRhNWZtemk0&utm_source=qr' className={styles.instagramLink}>
                         <FontAwesomeIcon icon={faInstagram} />
                     </a>
-                    <a target='_blank' href='https://discord.gg/wHY3zVBa'>
+                    <a target='_blank' href='https://discord.gg/wHY3zVBa' className={styles.discordLink}>
                         <FontAwesomeIcon icon={faDiscord} />
                     </a>
+                    <span />
                 </div>
                 <div className={styles.row2}>
                     <div>
@@ -48,9 +48,15 @@ const Footer = () => {
                                 height={80}
                             />
                         </Link>
-                        <a target='_blank' href='https://drive.google.com/file/d/1zS5HOZqJ9kxMqleY2IfDCroFsaqeUWtE/view?usp=sharing'>
-                            <span>Privacy Policy & Terms of Service</span>
-                        </a>
+                        <div>
+                            <a target='_blank' href='https://www.freeprivacypolicy.com/live/9b665689-ca3b-443c-9c64-95ab0f0f9c87'>
+                                <span>Privacy Policy</span>
+                            </a>
+                            <span style={{ textDecoration: 'none', padding: '0 10px' }}>|</span>
+                            <a target='_blank' href='https://app.websitepolicies.com/policies/view/21qzdqeo'>
+                                <span>Terms of Service</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

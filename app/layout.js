@@ -1,9 +1,15 @@
+import Script from 'next/script'
 import { Inter } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] });
+
+// To prevent oversized icons due to default styling.
+import '@fortawesome/fontawesome-svg-core/styles.css';
+import { config } from "@fortawesome/fontawesome-svg-core";
+config.autoAddCss = false;
 
 export const metadata = {
     title: 'Fantasy Fox AutoRacing',
@@ -13,6 +19,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
+            <Script src="https://app.termly.io/resource-blocker/a6f31c19-b70c-4508-9072-1d98103deafd?autoBlock=on" />
             <body className={[inter.className, ' layoutBG']}>
                 <Header />
                 <main>

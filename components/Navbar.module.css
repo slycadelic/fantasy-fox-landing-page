@@ -23,9 +23,6 @@
     justify-content: space-around;
     align-items: center;
 }
-/* .activeLink{
-    text-decoration: underline;
-} */
 
 .navLink {
     text-decoration: none;
@@ -47,6 +44,7 @@
 .navLink.active::after {
     width: 100%; /* Full underline on hover and active */
 }
+
 .mobileNavIcon
 {
     display: none;
