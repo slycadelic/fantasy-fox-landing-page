@@ -19,6 +19,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
+            <head>
+                <meta name="google-adsense-account" content="ca-pub-9229349071634080" />
+            </head>
             <Script src="https://app.termly.io/resource-blocker/a6f31c19-b70c-4508-9072-1d98103deafd?autoBlock=on" />
             <body className={[inter.className, ' layoutBG']}>
                 <Header />
